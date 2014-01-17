@@ -2,7 +2,7 @@
 layout: post
 title:  "Building a Software Engineering Framework that works for you"
 date:   2013-05-13 17:44:41
-categories: "Better Engineering Practices"
+categories: "better-engineering-practices"
 ---
 This article and it’s posts are about about figuring out what engineering fundamental’s are missing as a delivery team and how putting them in place will not only ensure a better product delivery rate, but also less stressed teams and a overall better working environment. You won’t find a solution to your problem here but you will find ideas that will help you solve it yourself.
 
