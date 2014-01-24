@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Creating a blog on Github Pages with jekyll"
-date:   2014-01-17 17:44:41
-categories: "playing-with-technology"
+date:   2014-01-17 00:00:00
+categories: playing-with-technology
+
 ---
 
 #Getting a simple page up on Github Pages.
