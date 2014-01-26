@@ -26,3 +26,6 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 
 	a box
 
+Table|Table|Table|Table
+---|:---|:---:|---:
+default align| left align: | centre | right align
