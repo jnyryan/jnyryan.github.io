@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "a-sample"
 date:   2014-01-16 00:00:00
 categories: playing-with-technology
 
@@ -26,6 +26,10 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 
 	a box
 
-Table|Table|Table|Table
----|:---|:---:|---:
-default align| left align: | centre | right align
+|Table|Table|Table|Table|
+|---|:---|:---:|---:|
+|default align| left align: | centre | right align|
+|default align| left align: | centre | right align|
+
+Super<sup>script</sup>
+Sub<sub>script</sub>
