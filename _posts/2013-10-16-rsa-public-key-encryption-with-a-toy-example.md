@@ -3,6 +3,7 @@ layout: post
 title:  "RSA Public key Encryption with a toy example"
 date:   2013-10-16 00:00:00
 categories: forensics-and-security
+tags: [security, encryption]
 
 ---
 There are countless papers already written on the history of RSA and it's usage in public key encryption. In this article i want to focus on the bare nuts and bolts - that is hw it works on a mathematical level.

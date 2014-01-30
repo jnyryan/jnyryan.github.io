@@ -10,7 +10,8 @@ blogger:
     siteid: "6842749499040869174"
     postid: "5793453007485010068"
     comments: "0"
-categories: [jQuery]
+categories: playing-with-technology
+tags: [jQuery]
 author: 
     name: "Johnny"
     url: "http://www.blogger.com/profile/05733316879665781472?rel=author"

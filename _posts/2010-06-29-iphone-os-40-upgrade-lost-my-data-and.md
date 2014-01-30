@@ -11,7 +11,8 @@ blogger:
     siteid: "6842749499040869174"
     postid: "6253179184226160291"
     comments: "0"
-categories: [iPhone]
+categories: playing-with-technology
+tags: [iPhone]
 author: 
     name: "Johnny"
     url: "http://www.blogger.com/profile/05733316879665781472?rel=author"

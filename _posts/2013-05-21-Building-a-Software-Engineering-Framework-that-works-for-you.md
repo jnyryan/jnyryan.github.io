@@ -3,6 +3,7 @@ layout: post
 title:  "Building a Software Engineering Framework that works for you"
 date:   2013-05-13 00:00:00
 categories: better-engineering-practices
+tags: [practices, development]
 
 ---
 

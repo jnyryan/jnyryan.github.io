@@ -10,7 +10,8 @@ blogger:
     siteid: "6842749499040869174"
     postid: "6311353069381338898"
     comments: "0"
-categories: [Powershell]
+categories: playing-with-technology
+tags: [Powershell]
 author: 
     name: "Johnny"
     url: "http://www.blogger.com/profile/05733316879665781472?rel=author"

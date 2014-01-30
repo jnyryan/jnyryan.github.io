@@ -3,7 +3,7 @@ layout: post
 title:  "AngularJS: Kicking the tyres"
 date:   2013-12-03 00:00:00
 categories: playing-with-technology
-
+tags: [angularjs, nodejs]
 ---
 
 AngularJS is a fairly nifty framework that’s pitched as “HTML enhanced for web apps”. It’s designed to fill some of the gaps that HTML leaves when declaring dynamic content in web-applications, like improving managing dynamic views and extending the HTML vocabulary for applications. The overall outcome is a very well structured set of libraries that really speed up development and reduce the amount of code that needs to be written to achieve some finicky UI tasks.

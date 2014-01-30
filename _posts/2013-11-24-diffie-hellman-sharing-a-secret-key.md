@@ -3,7 +3,7 @@ layout: post
 title:  "Diffie-Hellman: Sharing a secret key"
 date:   2013-11-24 00:00:00
 categories: forensics-and-security
-
+tags: [security encryption]
 ---
 One of the major problems to overcome in synchronious cryptography is the distribution of keys. For each message encrypted the key along with the message must be communicated to the desired recpient. In  1976 Diffie and Hellman came up with a method for establishing a shared secret key over an insecure communication channel, and it's known as the **Diffie-Hellman key exchange**
  

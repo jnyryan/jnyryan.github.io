@@ -1,8 +1,9 @@
 ---
 layout: post
-category : lessons
+category : playing-with-technology
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
+
 ---
 {% include JB/setup %}
 

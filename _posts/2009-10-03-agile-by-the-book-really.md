@@ -3,6 +3,7 @@ layout: post
 title:  "Agile by the book - Really?"
 date:   2009-10-03 00:00:00
 categories: better-engineering-practices
+tags: [practices, development]
 
 ---
 

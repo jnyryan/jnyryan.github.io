@@ -11,7 +11,8 @@ blogger:
     siteid: "6842749499040869174"
     postid: "2026530720362409683"
     comments: "0"
-categories: [WebSites]
+categories: playing-with-technology
+tags: [web-design]
 author: 
     name: "Johnny"
     url: "http://www.blogger.com/profile/05733316879665781472?rel=author"

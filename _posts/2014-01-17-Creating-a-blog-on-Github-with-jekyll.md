@@ -3,7 +3,7 @@ layout: post
 title:  "Creating a blog on Github Pages with jekyll"
 date:   2014-01-17 00:00:00
 categories: playing-with-technology
-
+tags: [web-design]
 ---
 I like simplicity and this is it in a nutshell. Create some text files and push them to GIT. How coos is that, managing your blog and deplying it using source control. Nerds say Y.E.S. Here's how to get a blog up and running in minutes - without paying for hosting or worrying about someone hacking your WordPress site.
 
