@@ -1,0 +1,24 @@
+---
+title: "A Linux Python Script to hit a MongoDb"
+layout: "post"
+permalink: "/A-Linux-Python-Script-to-hit-a-MongoDb.html"
+uuid: "528498611571768822"
+guid: "tag:blogger.com,1999:blog-6842749499040869174.post-528498611571768822"
+date: "2012-09-25 08:47:00"
+updated: "2012-09-25 08:47:44"
+description: 
+blogger:
+    siteid: "6842749499040869174"
+    postid: "528498611571768822"
+    comments: "0"
+categories: 
+author: 
+    name: "Johnny"
+    url: "http://www.blogger.com/profile/05733316879665781472?rel=author"
+    image: "http://img2.blogblog.com/img/b16-rounded.gif"
+published: "false"
+---
+
+<div class="css-full-post-content js-full-post-content">
+Here's one I struggled with for a while and it's not that hard.  I wanted to create a quick Python script to hit a MongoDb database but as usual spent more time looking for the drivers than writing the code.  First, I assume you have MongoDb installed on your local server.  Now install  Distribute, the python setup manager (<a href="http://packages.python.org/distribute/">for details on distrubute click here</a>)      curl -O http://python-distribute.org/distribute_setup.py    sudo python distribute_setup.py    sudo easy_install pip  And finally here's some python to hit the database:    import pymongo    connection = pymongo.Connection("localhost", 27017)    db = connection.test    db.name    db.my_collection.save({"Name": "John"})    db.my_collection.save({"Name": "Frank"})    db.my_collection.save({"Name": "Bill"})    db.my_collection.find_one()    for item in db.my_collection.find(): print item["Name"]
+</div>

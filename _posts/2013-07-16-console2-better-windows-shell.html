@@ -1,0 +1,23 @@
+---
+title: "Console2 - a better windows shell"
+layout: "post"
+permalink: "/2013/07/console2-better-windows-shell.html"
+uuid: "3260497489758641618"
+guid: "tag:blogger.com,1999:blog-6842749499040869174.post-3260497489758641618"
+date: "2013-07-16 09:24:00"
+updated: "2013-07-16 09:24:48"
+description: 
+blogger:
+    siteid: "6842749499040869174"
+    postid: "3260497489758641618"
+    comments: "0"
+categories: [WIndows]
+author: 
+    name: "Johnny"
+    url: "http://www.blogger.com/profile/05733316879665781472?rel=author"
+    image: "http://img2.blogblog.com/img/b16-rounded.gif"
+---
+
+<div class="css-full-post-content js-full-post-content">
+<br /><div>It seems that the windows world is not as enamoured with the shell (terminal) as the Unix/Linux world. One of the first things i do on my Windows box is install Cygwin as the tools are absolutely fantastic. However, the smaller open source community of the Microsoft world hasn't produced much in this regard.</div><div>... please prove me wrong, I'm a Microsoft fan...</div><div><br /></div><div>So, I spent a good while looking for a better Windows shell. All I wanted was to be able to Cut&amp;Paste like the rest of my apps and have tabbed windows that allow me to use my various shells like</div><div><ul><li>Command Prompt</li><li>cygwin</li><li>Git &nbsp;Bash</li><li>PowerShell</li><li>Visual Studio Command Prompt</li><li>MongoDb Shell</li><li>NodeJs</li></ul></div><div>Thankfully that is exactly what i found in Console2 - available for download &nbsp;from&nbsp;<a href="http://sourceforge.net/projects/console/files/" target="_blank">Sourceforge</a>.</div><div><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-omHGHsQX3u4/UeUPRBc7yYI/AAAAAAAAByA/TPDVN-nHjI0/s1600/console2.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="219" src="http://3.bp.blogspot.com/-omHGHsQX3u4/UeUPRBc7yYI/AAAAAAAAByA/TPDVN-nHjI0/s320/console2.PNG" width="320" /></a></div><div><br /></div><div><br /></div><div>What we get here is an easy to use shell that allows you to create pre-defined tabs with environmental variables set to launch the individual environments that you may need.</div><div><br /></div><div>There is no install utility, so simply unpack the executables to a folder and add that folder to your command path.</div><div><br /></div><div>To add a new shell: goto Edit&gt;Settings and click on Tabs and add tab for each environment that you want.&nbsp;</div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-80S9akE0SrY/UeUP9cXzvnI/AAAAAAAAByI/riy8m91c6FQ/s1600/Settings.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-80S9akE0SrY/UeUP9cXzvnI/AAAAAAAAByI/riy8m91c6FQ/s320/Settings.PNG" width="298" /></a></div><div><br /></div><div>These are the settings U use for a few of the shells mentioned above. FOr most you just point to their installation folder, but some need a few extra commands (like Visual Studio command prompt)</div><div><br /></div><div><br /></div><div>GitBash</div><div>Title: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;GitBash</div><div>Icon: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C:\Program Files (x86)\Git\etc\git.ico</div><div>Shell: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C:\Windows\SysWOW64\cmd.exe /c ""C:\Program Files (x86)\Git\bin\sh.exe" --login -i"</div><div>Startup Dir: &nbsp; c:\code</div><div><br /></div><div><div>Visual Studio Command</div><div><div>Title: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;VS Command</div><div>Icon: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><div>Shell: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat"" x86</div><div>Startup Dir: &nbsp; c:\</div></div></div><div><br /></div><div><div>Powershell</div><div><div>Title: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Powershell</div><div>Icon: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><div>Shell: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe</div><div>Startup Dir: &nbsp; c:\code</div></div></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div>
+</div>

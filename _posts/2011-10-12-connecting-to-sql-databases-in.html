@@ -1,0 +1,23 @@
+---
+title: "Connecting to SQL Databases in Powershell"
+layout: "post"
+permalink: "/2011/10/connecting-to-sql-databases-in.html"
+uuid: "5677478371029943951"
+guid: "tag:blogger.com,1999:blog-6842749499040869174.post-5677478371029943951"
+date: "2011-10-12 21:04:00"
+updated: "2011-10-12 21:04:39"
+description: 
+blogger:
+    siteid: "6842749499040869174"
+    postid: "5677478371029943951"
+    comments: "0"
+categories: [Powershell]
+author: 
+    name: "Johnny"
+    url: "http://www.blogger.com/profile/05733316879665781472?rel=author"
+    image: "http://img2.blogblog.com/img/b16-rounded.gif"
+---
+
+<div class="css-full-post-content js-full-post-content">
+SQLPS is a utility that creates a Windows PowerShell environment and then loads and registers the SQL Server snap-ins. You can use sqlps to:<br /><br />- Interactively run Windows PowerShell commands.<br />- Run Windows PowerShell script files.<br />- Run SQL Server cmdlets.<br /><br />How do you use it? Simple.<br />1. Open Powershell<br />2. Type sqlps<br />3. Type dir and&nbsp;SQL Server provider paths to navigate through the hierarchy of SQL Server objects.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-WlPavyKgOsU/TpYAox9uauI/AAAAAAAABig/hfXdpgPqMzU/s1600/PowershellSqlPs.PNG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="http://4.bp.blogspot.com/-WlPavyKgOsU/TpYAox9uauI/AAAAAAAABig/hfXdpgPqMzU/s400/PowershellSqlPs.PNG" width="345" /></a></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />By default, sqlps runs with the scripting execution policy set to Restricted, which prevents running any Windows PowerShell scripts. You can use the Set-ExecutionPolicy cmdlet to enable running signed scripts, or any scripts. Only run scripts from trusted sources, and secure all input and output files using the appropriate NTFS permissions. For more information about enabling Windows PowerShell scripts, see Running Windows PowerShell Scripts.<br /><br /><br />For a detailed microsoft explaination go here<br />http://msdn.microsoft.com/en-us/library/cc281962.aspx<br />
+</div>

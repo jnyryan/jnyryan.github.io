@@ -1,0 +1,23 @@
+---
+title: "Accessing Remote Servers with other active users"
+layout: "post"
+permalink: "/2011/11/qwinsta-and-rwinsta-if-you-ever-have.html"
+uuid: "7514659054126749825"
+guid: "tag:blogger.com,1999:blog-6842749499040869174.post-7514659054126749825"
+date: "2011-11-16 10:30:00"
+updated: "2012-11-23 13:29:46"
+description: 
+blogger:
+    siteid: "6842749499040869174"
+    postid: "7514659054126749825"
+    comments: "0"
+categories: [WIndows]
+author: 
+    name: "Johnny"
+    url: "http://www.blogger.com/profile/05733316879665781472?rel=author"
+    image: "http://img2.blogblog.com/img/b16-rounded.gif"
+---
+
+<div class="css-full-post-content js-full-post-content">
+If you ever have tried to remote to a server and the max number of connections are already estabilsted, here's how to view the sessions remotely and terminate them:<br /><div><br /><br /><h3 class="post-title entry-title" style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 18px; font-weight: normal; margin: 0px; position: relative;"><a href="http://www.happysysadm.com/2010/07/qwinsta-and-rwinsta.html" style="color: #336699; text-decoration: initial;">QWINSTA&nbsp;</a></h3><div><i>View active connections on are remote server</i></div><div><br /></div></div><div>C:\Users\jryan&gt;qwinsta /?</div><div><div>Display information about Remote Desktop Sessions.</div><div><br /></div><div>QUERY SESSION [sessionname | username | sessionid]</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [/SERVER:servername] [/MODE] [/FLOW] [/CONNECT] [/COUNTER] [/VM]</div><div><br /></div><div>&nbsp; sessionname &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Identifies the session named sessionname.</div><div>&nbsp; username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Identifies the session with user username.</div><div>&nbsp; sessionid &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Identifies the session with ID sessionid.</div><div>&nbsp; /SERVER:servername &nbsp;The server to be queried (default is current).</div><div>&nbsp; /MODE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Display current line settings.</div><div>&nbsp; /FLOW &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Display current flow control settings.</div><div>&nbsp; /CONNECT &nbsp; &nbsp; &nbsp; &nbsp;Display current connect settings.</div><div>&nbsp; /COUNTER &nbsp; &nbsp; &nbsp; &nbsp; Display current Remote Desktop Services counters information.</div><div>&nbsp; /VM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Display information about sessions within virtual machines.</div></div><div>Example:</div><div><b>&gt;qwinsta /server: pc1.domain.com</b></div><div><br /><br /><h3 class="post-title entry-title" style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 18px; font-weight: normal; margin: 0px; position: relative;"><a href="http://www.happysysadm.com/2010/07/qwinsta-and-rwinsta.html" style="color: #336699; text-decoration: initial;">RWINSTA</a></h3></div><div><i>Remove the active connections on a remote server&nbsp;</i></div><div><br /></div><div><div>C:\Users\ebyrne&gt;rwinsta /?</div><div>Reset the session subsytem hardware and software to known initial values.</div><div><br /></div><div>RESET SESSION {sessionname | sessionid} [/SERVER:servername] [/V]</div><div><br /></div><div>&nbsp; sessionname &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Identifies the session with name sessionname.</div><div>&nbsp; sessionid &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Identifies the session with ID sessionid.</div><div>&nbsp; /SERVER:servername &nbsp; The server containing the session (default is current).</div><div>&nbsp; /V &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Display additional information.</div></div><div><br /></div><div>Example:</div><div><b>&gt;</b><b>rwinsta 2 /server:pc1.domain.com</b><br /><b><br /></b><br /><h3 class="post-title entry-title" style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 18px; font-weight: normal; margin: 0px; position: relative;"><a href="http://www.happysysadm.com/2010/07/qwinsta-and-rwinsta.html" style="color: #336699; text-decoration: initial;">MSTSC</a></h3><br /><i>Another method for stealing control of a server is to use Microsofts Terminal Services Console</i><br /><br /><b>&gt;</b><b>mstsc -v:192.168.1.2 /admin</b><br /><b><br /></b><b><br /></b></div>
+</div>

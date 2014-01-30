@@ -1,0 +1,23 @@
+---
+title: "Those darn svchost.exe processes"
+layout: "post"
+permalink: "/2012/02/those-darn-svchostexe-processes.html"
+uuid: "2981695728087352403"
+guid: "tag:blogger.com,1999:blog-6842749499040869174.post-2981695728087352403"
+date: "2012-02-08 14:18:00"
+updated: "2012-02-08 14:18:12"
+description: 
+blogger:
+    siteid: "6842749499040869174"
+    postid: "2981695728087352403"
+    comments: "0"
+categories: [WIndows]
+author: 
+    name: "Johnny"
+    url: "http://www.blogger.com/profile/05733316879665781472?rel=author"
+    image: "http://img2.blogblog.com/img/b16-rounded.gif"
+---
+
+<div class="css-full-post-content js-full-post-content">
+So long have I just taken for granted that what resides in them is a mystery... no more.<div><br /></div><div>In case you don't know, the svchost is an executable container used to launch services that are now implemented as dynamic link libraries (.dll).&nbsp;This is all well and good until you get virus paronia and want to know what they happen to be running inside that generic veneer.&nbsp;</div><div><br /></div><div>Well it's easy to find out.</div><div>1. Open command prompt and enter</div><div>2. tasklist /SVC&nbsp;</div><div>3. All the running process are displayed, including any dependent services</div><div><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-iXVdmArFylA/TzKDGXuZZ-I/AAAAAAAABjA/iSBZpE_-rrU/s1600/tasklist.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="288" src="http://1.bp.blogspot.com/-iXVdmArFylA/TzKDGXuZZ-I/AAAAAAAABjA/iSBZpE_-rrU/s400/tasklist.PNG" width="400" /></a></div><div><br /></div><div>Easy when you know how i suppose</div><div><br /></div><div>... you could also use SysInternals ProcessMonitor available&nbsp;<a href="http://technet.microsoft.com/en-us/sysinternals/bb842062" target="_blank">here</a>, but the latter means you don't need to install any extra tools.</div>
+</div>

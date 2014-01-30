@@ -1,0 +1,24 @@
+---
+title: "Continuous Integration"
+layout: "post"
+permalink: "/Continuous-Integration.html"
+uuid: "4194072743271828108"
+guid: "tag:blogger.com,1999:blog-6842749499040869174.post-4194072743271828108"
+date: "2012-07-25 13:04:00"
+updated: "2012-07-25 16:11:30"
+description: 
+blogger:
+    siteid: "6842749499040869174"
+    postid: "4194072743271828108"
+    comments: "0"
+categories: [Software Engineering Framework]
+author: 
+    name: "Johnny"
+    url: "http://www.blogger.com/profile/05733316879665781472?rel=author"
+    image: "http://img2.blogblog.com/img/b16-rounded.gif"
+published: "false"
+---
+
+<div class="css-full-post-content js-full-post-content">
+<p>A very important aspect of modern software development is the concept of continuous integration (CI). It’s the practice of bringing all changes to a code base together as those changes are made - to ensure everything still behaves as expected. Done properly it brings the advantage of allowing developers to focus on feature development and away from the more mundane tasks like explaining to other developers how to set up your app on their machine, generating configuration files for specific environments or finding out your code breaks someone else’s feature a few hours before launch!</p> <p>Take the typical example of a company that has multiple teams distributed globally working on e-commerce website. While one team works on the front-end UI, others will work on backend inventory modules and others on payment interfaces. These all have to work in unison and if not designed robustly have the unfortunate possibility of affecting each others functionality and/or performance with the worst result possible - lost revenue and a very “shouty” call from the CTO. CI aims to reduce these undesirable outcomes by automating the common points of failure.<strong> The underlying premise behind CI is “If it’s repeatable – script it!”</strong></p> <p>It brings together three other concepts – Continuous Build, Continuous Test, Automatic Deployment</p> <h2>Continuous Build</h2> <p>as it suggests… starts with a dev building and running code locally</p> <h2>Continuous Test</h2> <p>Still obvious .. unit test/integration test</p> <h2>Automatic Deployment</h2> <p>&nbsp;</p> <p>CI solution should answer the following</p> <ul> <li>Can I get the latest code from source control and get developing with minimal fuss  <li>Can I run the entire app locally and not require external help to get bug fixing  <li>Can a member of the QA team deploy this to an environment with one-click or one command line  <li>If I make a change to code can I find out if I did any harm quickly  <li>If I create a new feature can I deploy it to production with high confidence that it will not impact the rest of the application.  <li>Am I necessary to deploy the app.</li></ul> <p>&nbsp;</p> <p>rough ideas</p> <ul> <li>developer local build  <li>tokenize config files  <li>tokenizing deployment locations  <li>- local deployment  <li>scripts  <li>typical workflow – start project, checkin, register with ci app, create deploy script  <li>SIT  <p>Coupled with Source Control (SVN / GIT)<br>Zero Effort Deployment<br>Defect and Task Management<br>Change Control</p></li></ul>  
+</div>
