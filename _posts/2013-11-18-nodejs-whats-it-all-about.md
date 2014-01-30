@@ -57,14 +57,19 @@ The code above uses the ‘http’ module, which creates a http server and liste
 
 ## Node Packet Manager
 
-Another nice feature is that nodejs comes with a packet manager called ‘npm’ or Node Packet Manager. This is an extremely handy tool for pulling down dependencies and allows you to encapsulate them in the application you are writing or install them globally for all your node application to use. the packages available are growing all the time, ranging from helper function libraries like “underscore.js” to full MCV frameworks like “express.js”. NPM comes with the installation and new packages are installed using the command “npm install <packagename>”. NPM maintains version compatibility by dowloading the packages to a “nodes_modules” folder in each application. If you download a package it will have it’s own “node_modules” folder with it’s own dependencies – in this way versions conflicts are avoided. Packages can also be installed globally using the “-g” switch – however the local versions are always probed first.
+Another nice feature is that nodejs comes with a packet manager called ‘npm’ or Node Packet Manager. This is an extremely handy tool for pulling down dependencies and allows you to encapsulate them in the application you are writing or install them globally for all your node application to use. 
+
+The packages available are growing all the time, ranging from helper function libraries like “underscore.js” to full MCV frameworks like “express.js”. 
+
+NPM comes with the Nodejs installation and new packages are installed using the command “npm install *packagename*”. It very smartly maintains version compatibility by dowloading the packages to a “nodes_modules” folder in each application. 
+
+If you download a package it will have it’s own “node_modules” folder with it’s own dependencies – in this way versions conflicts are avoided. Packages can also be installed globally using the “-g” switch – however the local versions are always probed first.
 
 ##So what now? 
 
 Well install NodeJS from [http://www.nodejs.org](http://www.nodejs.org/), read it’s API documentation and checkout the packages available from [https://npmjs.org](https://npmjs.org).
 
  
-
 ##Some very useful packages
 
 	npm install -g underscore
@@ -79,7 +84,7 @@ Well install NodeJS from [http://www.nodejs.org](http://www.nodejs.org/), read i
 
 
 - *Underscore* is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in core 
-- *Node Supervisor* is used to restart programs when they crash. It can also be used to restart programs when a *.js file changes. 
+- *Node Supervisor* is used to restart programs when they crash. It can also be used to restart programs when a .js file changes. 
 - *Grunt* is a javascript task runner 
 - *PrettyJSON* - format json nicely 
 - *Node Inspector* is a debugger interface for node.js using the Blink Developer Tools 
