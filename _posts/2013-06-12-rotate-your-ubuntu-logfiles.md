@@ -10,7 +10,7 @@ blogger:
     siteid: "6842749499040869174"
     postid: "2231292098669152309"
     comments: "0"
-categories: "playing-with-technology
+categories: "playing-with-technology"
 tags: [ubuntu, bash]
 author: 
     name: "Johnny"
