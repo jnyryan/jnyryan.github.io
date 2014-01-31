@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Source Control Management"
-date:   2013-07-09 00:00:00
+date:   2012-07-10 00:00:00
 categories: better-engineering-practices
 tags: [practices, development]
 
