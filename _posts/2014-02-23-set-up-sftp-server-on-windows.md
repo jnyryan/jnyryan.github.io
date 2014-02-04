@@ -8,14 +8,14 @@ categories: playing-with-technology
 
 Unfortunately, Windows does not come with a sFTP option in Internet Information Server so you will need to install third party software to get this up and running. The good news is, is that it is trivially easy. I use [FreeSSHd]
 
-##First setup a folder and user
+###First setup a folder and user
 - Create a new user in Computer Management called
 	- TestFreeSshUser with password FreeSshUserPwd
 - Create a new folder called
 	- c:\TestFreeSsh
 	- Add the user to the folder and give them read/write access
 
-## Configure FreeSSHd for username password
+###Configure FreeSSHd for username password
 - SHH Tab: Choose the listen address to be the public IP Address of your server
 - Authentication Tab: 
 	- Password authentication=Allowed
@@ -25,6 +25,8 @@ Unfortunately, Windows does not come with a sFTP option in Internet Information 
 	- Add a user who has access to the folder 
 	- Check the SFTP tag
 - Server Status Tab: Click to start the SSH Server
+
+You can now connect to the sFTP server using any client tool you prefer, my favourite is **Filezilla** or tyr **Putty**
 
 ##Troubleshooting:
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: John Ryans Blog!
+title: John Ryan's Blog!
 tagline: be a better engineer
 ---
 {% include JB/setup %}
