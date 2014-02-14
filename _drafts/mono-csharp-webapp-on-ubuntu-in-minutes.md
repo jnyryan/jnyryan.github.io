@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "_template"
+title:  "Mono C# Web App on Ubuntu in Minutes"
 date:   2014-01-16 00:00:00
 categories: better-engineering-practices forensics-and-security playing-with-technology
 description: 
@@ -9,3 +9,8 @@ tags: [practices, development]
 
 ---
 
+sudo apt-get install monodevelop
+
+create the app from a template
+
+install nginx and host it. 
