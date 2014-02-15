@@ -1,44 +1,54 @@
-# Jekyll-Bootstrap
-
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
-
-## Usage
-
-For all usage and documentation please see: <http://jekyllbootstrap.com>
-
-## Version
-
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
-
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
-
-## Contributing
+#jekyll-foundation-quickstart
 
 
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
+a quick setup for a jekyll based blog using the foundation framework by zurb
 
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+This is just a quickstart to get someone up and running with a basic blog that provides the usual features:
 
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+- Blog Entries
+- Categories
+- Tags
+- Pages
+- Post Comments using ***DISQUS***
+- Contact form using ***SimpleForm***
+- Google Analytics
+- Heroku Deployment
 
-**Jekyll-Bootstrap Documentation Website.**
+See it running in this [demo](http://jekyllfoundationquickstart.herokuapp.com/)
 
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
+###Change the site
+
+Obviously you'll want to customise this for yourself so the best place to start is in the _layouts folder just change the ***default.html***.
+Probably want to change the styles in the ***css*** folder as well.
+
+###Run the site locally
+
+Jekyll is Ruby based, so you'll need to have Ruby installed before running it.
+
+With Ruby installed, install the Jekyll gem and run it using these commands.
 
 
-## License
+```
+gem install jekyll
+jekyll serve
+```
 
-[MIT](http://opensource.org/licenses/MIT)
+###Deploy the site on heroku cloud
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+Heroku is a cloud platform as a service supporting several programming languages. 
+You can easily deploy the site to Heroku for free using the commands below.
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+```
+gem install bundler
+gem install heroku
+gem bundle install
+
+heroku create --stack cedar
+git push heroku master
+heroku open
+
+```
+
+LICENCE: [MIT](LICENSE)
+
+
