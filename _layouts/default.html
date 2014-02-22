@@ -1,153 +1,118 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/foundation.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
-    <script src="/js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-    
-        <!-- Nav Bar -->
- 
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="nav-bar right">
-       <ul class="button-group">
-         <li><a href="#" class="button">home</a></li>
-          <li><a href="/p/contact" class="button">contact</a></li>
-       </ul>
-      </div>
-     <h1 class="title"><a href="/">{{ site.name }}</a>&nbsp;
-     <br>      
-     <small>{{site.slackline}}</small>
-     </h1>
-     <div class="text-center">
-      <hr />
-      
-	<a class="extra" href="/">HOME</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/archive">ARCHIVE</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/pages">PAGES</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/categories">CATEGORIES</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/tags">TAGS</a>
 
-      <hr />
-      	</div>      
-    </div>
-  </div>
- 
-  <!-- End Nav -->
- 
- 
-  <!-- Main Page Content and Sidebar -->
- 
-  <div class="row">
- 
-    <!-- Main Blog Content -->
-    <div class="large-9 columns" role="content">
- 
-      {{content}}
- 
-    </div>
- 
-    <!-- End Main Content -->
- 
- 
-    <!-- Sidebar -->
- 
-    <aside class="large-3 columns">
-     
-	<div class="panel">
-        <h5>Template Features</h5>
-	<ul class="side-nav">
-      		<li>Blog Entries</li>
-        	<li>Categories</li>
-         	<li>Tags</li>
-          	<li>Pages</li>
-           	<li>Post Comments using DISQUS</li>
-            	<li>Contact form using SimpleForm</li>
-            	<li>Google Analytics</li>
-            	<li>Heroku Deployment</li>
-            	<a href="https://github.com/jnyryan/jekyll-foundation-quickstart">Read More →</a>
-      </ul>
-      </div>
-  
-      <h5>Pages</h5>
-      <ul class="side-nav">
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if group == null or group == node.group %}
-              {% if page.url == node.url %}
-              <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-              {% else %}
-              <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-              {% endif %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      {% assign pages_list = nil %}
-      {% assign group = nil %}
-      </ul>
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <h5>Links</h5>
-      <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
-      </ul>
- 
-   	<h5>About</h5>
-      <ul class="side-nav">
-        <li>Created by John Ryan <a href="http://jnyryan@hithub.io">jnyryan@hithub.io</a></li>
-        <li><a href="https://github.com/jnyryan/jekyll-foundation-quickstart">Source Code</a></li>
-      </ul>
- 
-    </aside>
- 
-    <!-- End Sidebar -->
-  </div>
- 
-  <!-- End Main Content and Sidebar -->
- 
- 
-  <!-- Footer -->
- 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© Copyright no one at all. Go to town.</p>
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/blog/blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ relative }}/css/custom.css" />
+    <link href="{{ relative }}/css/customblog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
+
+<body>
+
+<div class="blog-masthead">
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">{{ site.name }}</h1>
+            <p class="lead blog-description">{{ site.slackline }}</p>
         </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </div>
-      </div>
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="/">Home</a>
+            <a class="blog-nav-item" href="/p/archive">Archive</a>
+            <a class="blog-nav-item" href="/p/categories">Categories</a>
+            <a class="blog-nav-item" href="/p/tags">Tags</a>
+            <a class="blog-nav-item" href="/p/pages">Pages</a>
+            <a class="blog-nav-item" href="/p/contact">Contact</a>
+            <a class="blog-nav-item" href="/p/contact">Portfolio</a>
+
+        </nav>
     </div>
-  </footer>
-    
-    
-    
-    <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script> 
-    {% if site.analytics_enabled %}
-      {% include /google_analytics %}
-    {% endif %}
-  </body>
-</html>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-8 blog-main">
+            {{content}}
+
+            <ul class="pager">
+                <li><a href="http://getbootstrap.com/examples/blog/#">Previous</a></li>
+                <li><a href="http://getbootstrap.com/examples/blog/#">Next</a></li>
+            </ul>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="sidebar-module">
+                <h4>Archives</h4>
+                <ol class="list-unstyled">
+                    <li><a href="http://getbootstrap.com/examples/blog/#">January 2014</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">December 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">November 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">October 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">September 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">August 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">July 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">June 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">May 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">April 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">March 2013</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">February 2013</a></li>
+                </ol>
+            </div>
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="http://getbootstrap.com/examples/blog/#">GitHub</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">Twitter</a></li>
+                    <li><a href="http://getbootstrap.com/examples/blog/#">Facebook</a></li>
+                </ol>
+            </div>
+        </div><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+<div class="blog-footer">
+    <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+        <a href="http://getbootstrap.com/examples/blog/#">Back to top</a>
+    </p>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+
+{% if site.analytics_enabled %}
+{% include /google_analytics %}
+{% endif %}
+
+</body></html>
