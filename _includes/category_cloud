@@ -1,0 +1,5 @@
+{% for cat in site.categories %}
+        <a style="font-size: {{ cat | last | size | times: 100 | divided_by: site.categories.size | plus: 80 }}%" href="/{{ tags | first | slugize }}/">
+            {{ cat | first }}
+        </a>
+{% endfor %}

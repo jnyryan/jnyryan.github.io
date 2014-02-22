@@ -1,0 +1,5 @@
+{% for tags in site.tags %}
+        <a style="font-size: {{ tags | last | size | times: 100 | divided_by: site.tags.size | plus: 80 }}%" href="/{{ tags | first | slugize }}/">
+            {{ tags | first }}
+        </a>
+{% endfor %}
