@@ -13,7 +13,7 @@ permalink: /:title
 
 # Comments System
 # This is the key for the Disqus comments system. Get one from http://disqus.com/
-disqus_shortname: jekyllfoundationdemo
+disqus_shortname: jnyryangithubio
 
 # Contact Form
 # The api key for getsimpleform. Get one from http://getsimpleform.com
@@ -23,8 +23,8 @@ contactform_apitoken: f70a375b83a60ecfafe284aec39cd227
 
 # Google Analytics
 analytics_enabled: true
-analytics_key: UA-13112699-12
-analytics_site: jekyllfoundationquickstart.herokuapp.com
+analytics_key: UA-13112699-11
+analytics_site: jnyryan.github.io
 
 # Heroku Deployment
 # Exclude files that are used for deployment (in this case deploying to Heroku)
