@@ -54,3 +54,11 @@
     border-top: 4px solid #75a8d3;
 }
 
+.sidebar-module a{
+    color: #fff;
+}
+
+.sidebar-module a:hover{
+    color: #ffd343;
+}
+
