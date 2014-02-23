@@ -1,5 +1,12 @@
-{% for tags in site.tags %}
-        <a style="font-size: {{ tags | last | size | times: 100 | divided_by: site.tags.size | plus: 80 }}%" href="/{{ tags | first | slugize }}/">
-            {{ tags | first }}
-        </a>
-{% endfor %}
+
+
+<div class="sidebar-module sidebar-module-inset">
+                <h4>Tag Cloud</h4>
+                <p>
+                {% for tags in site.tags %}
+                        <a class="blog_cloud" style="font-size: {{ tags | last | size | times: 100 | divided_by: site.tags.size | plus: 80 }}%" href="/p/tags/#{{ tags | first | slugize }}-ref">
+                            {{ tags | first }}
+                        </a>
+                {% endfor %}
+                </p>
+            </div>
