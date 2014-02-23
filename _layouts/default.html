@@ -11,10 +11,10 @@
     <title>{{ page.title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ relative }}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/blog/blog.css" rel="stylesheet">
+    <link href="{{ relative }}/css/blog.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ relative }}/css/custom.css" />
     <link href="{{ relative }}/css/customblog.css" rel="stylesheet">
 
@@ -39,9 +39,7 @@
         </div>
         <nav class="blog-nav">
             <a class="blog-nav-item active" href="/">Home</a>
-            <a class="blog-nav-item" href="/p/archive">Archive</a>
             <a class="blog-nav-item" href="/p/categories">Categories</a>
-            <a class="blog-nav-item" href="/p/tags">Tags</a>
             <a class="blog-nav-item" href="/p/pages">Pages</a>
             <a class="blog-nav-item" href="/p/contact">Contact</a>
             <a class="blog-nav-item" href="/p/contact">Portfolio</a>
@@ -69,31 +67,10 @@
                 <h4>About</h4>
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
             </div>
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>Tag Cloud</h4>
-                <p>{% include /tag_cloud %}</p>
-            </div>
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>Category Cloud</h4>
-                <p>{% include /category_cloud %}</p>
-            </div>
-            <div class="sidebar-module">
-                <h4>Archives</h4>
-                <ol class="list-unstyled">
-                    <li><a href="http://getbootstrap.com/examples/blog/#">January 2014</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">December 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">November 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">October 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">September 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">August 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">July 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">June 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">May 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">April 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">March 2013</a></li>
-                    <li><a href="http://getbootstrap.com/examples/blog/#">February 2013</a></li>
-                </ol>
-            </div>
+            {% include /tag_cloud %}
+
+            {% include /archive_list %}
+
             <div class="sidebar-module">
                 <h4>Elsewhere</h4>
                 <ol class="list-unstyled">
