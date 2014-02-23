@@ -8,7 +8,7 @@ tags: [nodejs]
 ---
 
 NodeJs is a fairly popular technology at the moment that was invented to solve a very simple problem – Ryan Dahl it’s inventor just wanted to upload a file with an accurate progress bar. A humble beginning that developed quite nicely into a platform that “uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices”. With JavaScript at it’s core it provides developers with the opportunity to develop applications with server and client side components written in the same language.  Under the covers it uses the JavaScript V8 runtime with Node wrapping around this engine providing additional functionality to build network applications. it’s written in C… nice and fast.
-
+<linebreak>
 It’s a nice sales pitch, but since it’s what I do, I thought I’d take a look at getting it up and running and see what it’s all about. First point to note is that it’s built on the JavaScript V8 runtime for which node provides a wrapper. Good to know that it’s foundation is a solid well tested engine, and also it’s written in C… nice and fast.
 
 Now, NodeJS not a web framework, but libraries  exist for it and can be added to it. It also isn’t a all purpose language – it’s written specifically to solve the problems around building scalable network applications- recommended for Web Socket server like chat applications, and file upload clients … that work in a non blocking manner so that the files can be worked on while they upload. Also good for real-time data applications, like data feeds with ticker, news and pricing.

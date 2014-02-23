@@ -20,7 +20,7 @@ author:
 ---
 
 A few months ago i was standing around the work coffee machine with a colleague when he blurted out “do you ever study design patterns in university?”. Now rather than take this as a personal affront to my coding style - I cast my mind back about 20 years and had to answer “no” - and this made me think.
-
+<linebreak>
 His question stemmed from the round of interviews we were conducting for an open senior developer. Very few of the interviewees could answer the simplest design pattern questions like “describe the factory pattern or singleton pattern”- or even “What’s your favourite pattern or one you find yourself using the most often”. Now it wasn’t just a case of them forgetting, which i have no problem with, there are lots of different names for patterns and coders just use them without thinking - or so i thought. It seems that something that i take for granted now is not
 
 That got me thinking, how much do i really know about design patterns and how much do i practice.

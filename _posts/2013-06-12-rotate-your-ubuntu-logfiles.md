@@ -23,7 +23,7 @@ Running out of diskspace coz you over-log?
 Well first, there are never too many logs!
 
 Managing your logs is the trick. In ubuntu there’s a service/daemon that manages this for you called rsyslog, that will ensure your logs are kept in order. The service will delete logs that go stale according to the settings in the config file. Below the process “syslog” is rotated daily, that is every day a new file is created and a index number appended onto the end of the file. The rotate value is set to 2, which means only hold 2 rotated logs and delete the rest. The other services in the config file are set to weekly rotation and to be rotated every 4 weeks.
-
+<linebreak>
 ### Edit the config file
 
 {% highlight bash %}

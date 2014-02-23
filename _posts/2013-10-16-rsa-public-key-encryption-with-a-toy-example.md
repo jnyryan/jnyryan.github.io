@@ -7,7 +7,7 @@ tags: [security, encryption]
 
 ---
 There are countless papers already written on the history of RSA and it's usage in public key encryption. In this article i want to focus on the bare nuts and bolts - that is hw it works on a mathematical level.
-
+<linebreak>
 RSA security is based on the Integer Factorization Problem which is what we call a very hard problem to solve. Loosely it's given two primes *p* and *q*, compute *N=pq*. The multiplication is easy however the inverse is difficult i.e. factoring *N* into *p* and *q*
 
 ###RSA Theory in 3 steps

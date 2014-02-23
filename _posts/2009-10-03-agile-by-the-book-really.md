@@ -16,6 +16,7 @@ At this stage most developers have come across agile development methodology in 
 - Sprint Demo. Show your you deliverables to the stakeholders
 - Retrospective. Look back and see what worked and what could be improved
 - Repeat!
+<linebreak>
 
 No surprise there. The theory is solid but the practice I have found is less solid. I was in one company where we made the decision to switch from our bulky Waterfall Software Development Life Cycle (SDLC) quarterly release schedule to a more flexible Agile approach. The approach was gung-ho. An Agile Leadership Team was set up to steer the company in the right direction resulting in more than 100 developers being sent on Agile training over a 6 month period, scores of policy documents being written detailing how to manage releases, sprint processes and structure, backlog structure, even the process of estimation had a policy document.
 

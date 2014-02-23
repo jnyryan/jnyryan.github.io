@@ -7,7 +7,7 @@ categories: better-engineering-practices forensics-and-security playing-with-tec
 ---
 
 You don’t need to be a member of some elite agency to justify keeping you data safe and secure. Loosing a USB Thumb Drive with your accounts on it, a report you did for work or photos that you just don’t want seen can open you up to identify theft or worse – Facebook abuse. Thankfully there are freely available apps to help you out here, a good one that I use is TrueCrypt.
-
+<linebreak>
 TrueCrypt allows you to create an encrypted folder on your PC, Mac or USB Thumb Drive. You can either install the
 
 

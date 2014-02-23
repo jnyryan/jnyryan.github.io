@@ -8,7 +8,7 @@ tags: [practices, development]
 ---
 
 This article and it’s posts are about about figuring out what engineering fundamental’s are missing as a delivery team and how putting them in place will not only ensure a better product delivery rate, but also less stressed teams and a overall better working environment. You won’t find a solution to your problem here but you will find ideas that will help you solve it yourself.
-
+<linebreak>
 
 Every company, every delivery team, probably each product has it’s own style that requires a delicate touch that requires it’s own it’s own customizations. All to often, organizations attempt to create one all encompassing strategy to handle its builds, configurations, deployments and project management. With the growth of the Cloud, we can’t assume any longer that the majority of our applications will be 3-tier, internally hosted mammoth systems. These days, I spend my time writing distributed systems, internal message queue connected out to Salesforce CRM, syncing to Amazon Web Services with external front ends hosted on Heroku and internal sites running on our Internal Private Cloud. The good old days of having the whole system sitting on my laptop and hacking away end-to-end features while on a plane are well and truly gone.
 

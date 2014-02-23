@@ -8,7 +8,7 @@ tags: [security, processes]
 ---
 
 To understand the security aspects of software, it’s important to know how the operating system treats software and how it’s shored and accessed during execution. This article is aimed at refreshing engineers memories who have already touched this subject even though it may have been many years ago.
-
+<linebreak>
 
 The Process address space is the environment set up by the operating system in which the process can execute. The program is just a collection of instructions and data sitting on the disk and do needs a structure that is defined and usable to run its instructions. When code is compiled, the instructions are stored in the .text segment, the execution engine then knows where to begin execution and it steps over the instructions in this space. If the program had global data then this would be stored in the data segment and local variables to functions are stored in the stack or heap. A diagrammatic representation of this could be a box separated into areas that represent different logical segments of the address space.
 

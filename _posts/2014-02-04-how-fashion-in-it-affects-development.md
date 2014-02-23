@@ -10,7 +10,7 @@ tags: [practices, development]
 ---
 
 Are developers fashionable when it comes to technology? You don't have to look very far to see that the IT world is far more fashionable that you might have thought. The sheer amount of new technologies that appear on the scene every year attest to it - **nodejs, coffeescript, angularjs** to name but a few, and they are damn good tech... but do they get traction? The answer is Yes, but not everywhere. 
-
+<linebreak>
 ###So what's the issue?
 
 Many software houses tie themselves into a technology stack and tend not to waver from it, whether due to a lack of in-house skills or just to lack of interest. However, it strikes me that all the top coders and engineers I've met over the years have been inherent hackers and love to tinker with what's new (and old, i love playing around with the linux kernel and shell) - so limiting them in the workplace seems counter intuitive. These **poly-programmers** get enjoyment out of the experience of learning new things and applying them. 

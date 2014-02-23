@@ -7,7 +7,7 @@ categories: playing-with-technology
 ---
 
 Unfortunately, Windows does not come with a sFTP option in Internet Information Server so you will need to install third party software to get this up and running. The good news is, is that it is trivially easy. I use [FreeSSHd]
-
+<linebreak>
 ###First setup a folder and user
 - Create a new user in Computer Management called
 	- TestFreeSshUser with password FreeSshUserPwd

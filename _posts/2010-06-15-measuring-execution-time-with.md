@@ -24,7 +24,7 @@ This is an easy one - use measure-command CommandLet
 	# do your long running action in here, like loading a 	file
 	@file = get-content “c:\MyFile.txt”
 	}
-
+<linebreak>
 Output Looks like this:
 
 	Days : 0

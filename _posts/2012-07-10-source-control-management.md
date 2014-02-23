@@ -8,7 +8,7 @@ tags: [practices, development]
 ---
 
 Source Control Management (SCM) also called a Version Control System (VSC) is the cornerstone of enterprise software development. Simply put, it provides an easy means for developers to manage their source code in terms of sharing, tracking and security – giving teams (and individual coders) the flexibility that they need to produce high quality reliable code with the safety that they know all changes to code can be retrieved/monitored and undone if necessary. The alternative is to keep the source code in a folder somewhere on a network, but then think how hard it would be to do the following:
-
+<linebreak>
 - Keep a history of changes to files
 - Allow multiple developers to work on a file at once
 - View the differences between files
@@ -69,4 +69,5 @@ Whether your a professional or novice coder having your library of apps and scri
 |BitBucket|[www.bitbucket.com](www.bitbucket.com)|
 |github|[www.github.com](www.github.com)|
 |Unfuddle|[www.unfuddle.com](www.unfuddle.com)|
-	 
+	
+ 

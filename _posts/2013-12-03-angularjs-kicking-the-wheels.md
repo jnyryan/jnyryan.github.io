@@ -7,7 +7,7 @@ tags: [angularjs, nodejs]
 ---
 
 AngularJS is a fairly nifty framework that’s pitched as “HTML enhanced for web apps”. It’s designed to fill some of the gaps that HTML leaves when declaring dynamic content in web-applications, like improving managing dynamic views and extending the HTML vocabulary for applications. The overall outcome is a very well structured set of libraries that really speed up development and reduce the amount of code that needs to be written to achieve some finicky UI tasks.
-
+<linebreak>
 I decided to take it for a test drive and see how long it would take me to write a very simple web application that retrieves data from RESTful service and allows it to be displayed and filtered on the client. The answer -all in, it must have taken me an hour to get this up and running. I was very impressed with the level of documentation available and the ease with which I could apply it. **The full listing can be seen on [https://github.com/patchapps/angularjs-node]()**. The files of interest are under the Public folder, i did wrap this in a nodeJs project. For those who don’t know NodeJS, you can simply copy the Public folder to any web server and hit public/views.index.html
 
 So What is Angular? At it’s most simple it’s a library or javascript file that you include in your html page, that gives you loads of extra functionality. Here’s a basic HTML page with angularJS included.

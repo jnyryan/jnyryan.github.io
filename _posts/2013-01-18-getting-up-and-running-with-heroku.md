@@ -8,7 +8,7 @@ tags: [Cloud, Development, Heroku, Technology]
 ---
 
 Feeling a little overwhelmed with all the various Cloud technologies around these days? This post is a quick introduction that will explain a bit about Heroku and show you how to get a website up and running on it in a matter of minutes.
-
+<linebreak>
 Well, what is Heroku?
 
 Heroku is a Platform as a Service (PaaS) Cloud implementation, meaning that like other PaaS clouds

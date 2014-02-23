@@ -9,7 +9,7 @@ tags: [practices, development, methodologies]
 
 ---
 The **Twelve Factor App** is something I came across that a while ago that resonates with my thought process. It's primarily for *software-as-a-service* applications but so much of it can be abstracted to be applied to many other forms of systems.
-	
+<linebreak>
 What really rings through is that the version of code in source control is the live version, config is stored in the environment and logging is just a stream to standard out to be consumed as needed. Implementing these alone get a development team to a stage where an application can be deployed from git/svn/other to any environment be it production/staging or just a developers laptop with one click.
 
 Does it work? Yes, I've been doing it for years!

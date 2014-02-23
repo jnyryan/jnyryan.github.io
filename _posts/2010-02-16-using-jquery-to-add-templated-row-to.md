@@ -19,6 +19,7 @@ author:
 ---
 
 I wanted a quick easy way of adding rows to a table - preferably by designing the layout in html and then copying to where i needed it and changing the elements values where needed. This took me longer to figure out than it should have - so I thought I'd share it.
+<linebreak>
 
 The snippet copies a row from one table and inserts it to the target table.
 

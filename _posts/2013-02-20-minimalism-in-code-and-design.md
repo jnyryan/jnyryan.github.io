@@ -12,7 +12,7 @@ tags: [practices, development]
 ###Minimalism. 
   
 There are lots of ways to build (tools, languages) and I’ve seen many work in different companies, and I’ve seen mixed technologies work. There is one theme however to teams that deliver a lot of business value. They don’t repeat themselves. 
-  
+<linebreak> 
 Now, I’d wager the first thing that hops into your mind with that phrase is code re-use. Or writing code to be re-used. Turns out, that’s not where you get leverage on re-use, you get it by re-using code someone, somewhere else has already written. Thinking about writing reusable code isn’t how you get leverage, reusing used code is.  
   
 That’s not the real problem though. The real problem is data. If you take a big step back and look at what apps generally do is store and present data, and from time to time there is some algorithmics (search, AI suggestions, machine learned prediction models) – but most code that I’ve seen is in the business of storing data and fetching it with display to the user as a string, either as a web page or email.  

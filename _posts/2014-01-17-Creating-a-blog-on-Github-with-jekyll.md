@@ -6,7 +6,7 @@ categories: playing-with-technology
 tags: [web-design]
 ---
 I like simplicity and this is it in a nutshell. Create some text files and push them to GIT. How coos is that, managing your blog and deplying it using source control. Nerds say Y.E.S. Here's how to get a blog up and running in minutes - without paying for hosting or worrying about someone hacking your WordPress site.
-
+<linebreak>
 #Getting a simple page up on Github Pages.
 - Log into your Github account
 - create a new repository called  *your_user_name.github.io*
