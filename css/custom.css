@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*
-/* Common
+/* tagbox
 /*
 /*****************************************************************************/
 
@@ -39,3 +39,33 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+/*****************************************************************************/
+/*
+/* table
+/*
+/*****************************************************************************/
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #caccce;
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: Calibri;
+}
+
+table th{
+    padding: .5em .5em .4em .75em;
+}
+
+table td{
+    border: 1px solid #caccce;
+    padding: .5em .5em .4em .75em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f4f6;
+
+    margin-right: 0;
+
+}
