@@ -62,3 +62,18 @@
     color: #ffd343;
 }
 
+@media(min-width: 1200px){
+    .container {
+        width: 970px;
+    }
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
