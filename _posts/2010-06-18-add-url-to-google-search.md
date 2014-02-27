@@ -19,8 +19,8 @@ author:
     image: "http://img2.blogblog.com/img/b16-rounded.gif"
 ---
 
-<div class="css-full-post-content js-full-post-content">
-Go to the following page and enter your details:<br />http://www.google.com/addurl/?continue=/addurl<br /><br />Hopefully you'll see your site in a few days.
-</div>
+Go to the following page and enter your details:[http://www.google.com/addurl/?continue=/addurl](http://www.google.com/addurl/?continue=/addurl)
+
+Hopefully you'll see your site in a few days.
 
 <linebreak>

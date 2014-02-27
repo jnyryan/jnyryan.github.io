@@ -28,7 +28,7 @@ Example 1
 Example 2
 
 	Get-ChildItem -include .txt -recurse | Select-String “Hello” | Format-Table
-
+<linebreak>
 Example 3
 
 	Get-ChildItem -include *.txt -recurse | Select-String “Hello” | Format-Table -Property Path, LineNumber, Line -Autosize

@@ -53,7 +53,7 @@ Now in this example, *3* is the shared secret that can be used as the key/passwo
 
 **How secure is it?**
 
-A and B useg<sup>xy</sup> (mod p) as a shared key. 
+A and B use g<sup>xy</sup> (mod p) as a shared key. 
 
 An attacker can see g<sup>x</sup> (mod p) and g<sup>y</sup> (mod p)
 

@@ -15,6 +15,7 @@ permalink: /:title
 
 # Comments System
 # This is the key for the Disqus comments system. Get one from http://disqus.com/
+disqus_enabled: false
 disqus_shortname: jnyryangithubio
 
 # Contact Form

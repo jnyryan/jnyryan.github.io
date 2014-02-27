@@ -20,7 +20,7 @@ author:
 ---
 
 When dealing with legacy code I find it invaluable to have a way of accessing private internal members to write. Here's some very handy code that will do just that. And for goo measure, i've included some unit tests.
-
+<linebreak>
 ``` c
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Subtext WebLog

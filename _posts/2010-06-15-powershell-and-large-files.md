@@ -20,7 +20,7 @@ author:
 ---
 
 I recently needed to write a script to get some data from a XML file, in this case all IDs of Topic Elements. Decided to use Powershell but quickly ran into an issue due to the size of the uncompressed file... 127MB. Here's my initial script:
-
+<linebreak>
 {% highlight powershell%}
 # Get the ids
 $File = .\myFile.xml

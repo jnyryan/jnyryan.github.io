@@ -24,7 +24,7 @@ I wanted a way to change the powershell prompt, in particular to:
 - Show the stcck level when “pushd” is used
 
 Then a colleague showed me this.
-
+<linebreak>
 Add the following function to your current profile - it’s an override for the prompt method:
 
 {% highlight bash%}
