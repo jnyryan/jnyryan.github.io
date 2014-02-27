@@ -5,7 +5,9 @@ title: Home
 
 <div id="home">
 <br>
-    <p>All Python releases are Open Source. Historically, most, but not all, Python releases have also been GPL-compatible. The Licenses page details GPL-compatibility and Terms and Conditions.All Python releases are Open Source. Historically, most, but not all, Python releases have also been GPL-compatible. The Licenses page details GPL-compatibility and Terms and Conditions.</p>
+    <p>
+        a developers musings on various areas of technology that are interesting and worth taking a deeper look at...
+    </p>
    <br>
     <div class="row">
 
@@ -41,6 +43,8 @@ title: Home
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
       {{ post.excerpt}}
+      <a href="{{ post.url }}">Read more &raquo;</a>
+      <hr />
     {% endfor %}
   </ul>
 </div>

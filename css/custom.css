@@ -100,3 +100,23 @@ tr:nth-child(even) {
     background-color: #fff;
     border-radius: 5px;
 }
+
+/*****************************************************************************/
+/*
+/* posts
+/*
+/*****************************************************************************/
+
+article{
+    text-align: justify;
+}
+
+.posts{
+    text-align: justify;
+
+}
+
+code{
+    font: Consolas, "Liberation Mono", Courier, monospace;
+}
+

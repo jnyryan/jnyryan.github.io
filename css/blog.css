@@ -20,6 +20,13 @@ h6, .h6 {
   color: #333;
 }
 
+/*
+ * Override Bootstrap's pre.
+ */
+
+pre {
+    font-size: 10px;
+    }
 
 /*
  * Override Bootstrap's default container.
