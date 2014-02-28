@@ -14,7 +14,7 @@ title: Home
         <div class="col-md-4">
             <div class="category-description">
             <h4 class="widget-title"><em>Engineering Practices</em></h4>
-            <p>All Python releases are <a href="http://www.opensource.org/">Open Source</a>. Historically, most, but not all, Python releases have also been GPL-compatible. The Licenses page details GPL-compatibility and Terms and Conditions. </p>
+            <p></p>
             <p><a class="readmore" href="{{ relative }}/p/categories">Read more &raquo;</a></p>
             </div>
         </div>
@@ -32,18 +32,21 @@ title: Home
         <div class="col-md-4">
             <div class="category-description">
             <h4 class="widget-title"><em>Forensics and Security</em></h4>
-            <p>All Python releases are <a href="http://www.opensource.org/">Open Source</a>. Historically, most, but not all, Python releases have also been GPL-compatible. The Licenses page details GPL-compatibility and Terms and Conditions. </p>
+            <p></p>
             <p><a class="readmore" href="{{ relative }}/p/categories">Read more &raquo;</a></p>
             </div>
         </div>
-<br>
+        <br>
     </div>
 
   <h1>Blog Posts</h1>
   <ul class="posts">
       <hr>
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <span><h6>Written by <a href="#">John Ryan</a> on {{ post.date | date_to_string }}.</h6></span>
+      </li>
       {{ post.excerpt}}
       <a href="{{ post.url }}">Read more &raquo;</a>
       <hr />
