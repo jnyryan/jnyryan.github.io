@@ -13,12 +13,13 @@
 				    		<input name="Name" type="text" placeholder="Name" />
 						</div>
 					</div>
+					<br>
 				<div class="row">
 					<div class="large-9 columns">
-				      <textarea name='Message' placeholder="Enter message here"></textarea>
-					</div>
+				      <textarea cols=80 rows=5 name='Message' placeholder="Enter message here"></textarea>
+					</div><input class="small round button" type='submit' value='Send Message' />
 				</div>
-		 		<input class="small round button" type='submit' value='Send Message' />
+
        		</div>
        	</div>
      </form>

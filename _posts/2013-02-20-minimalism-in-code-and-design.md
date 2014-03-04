@@ -9,9 +9,7 @@ tags: [practices, development]
 
 ---
 
-###Minimalism. 
-  
-There are lots of ways to build (tools, languages) and I’ve seen many work in different companies, and I’ve seen mixed technologies work. There is one theme however to teams that deliver a lot of business value. They don’t repeat themselves. 
+There are lots of ways to build (tools, languages) and I’ve seen many work in different companies, and I’ve seen mixed technologies work. There is one theme however to teams that deliver a lot of business value. They don’t repeat themselves.
 <linebreak> 
 Now, I’d wager the first thing that hops into your mind with that phrase is code re-use. Or writing code to be re-used. Turns out, that’s not where you get leverage on re-use, you get it by re-using code someone, somewhere else has already written. Thinking about writing reusable code isn’t how you get leverage, reusing used code is.  
   
