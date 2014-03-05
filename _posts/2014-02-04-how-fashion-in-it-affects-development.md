@@ -4,7 +4,6 @@ title:  "How fashion in IT affects development"
 date:   2014-02-04 00:00:00
 categories: better-engineering-practices 
 description: 
-categories: better-engineering-practices
 tags: [practices, development]
 
 ---

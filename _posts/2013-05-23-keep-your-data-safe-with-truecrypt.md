@@ -2,7 +2,7 @@
 layout: post
 title:  "Keep your data safe with TrueCrypt"
 date:   2013-05-23 00:00:00
-categories: better-engineering-practices forensics-and-security playing-with-technology
+categories: forensics-and-security
 
 ---
 

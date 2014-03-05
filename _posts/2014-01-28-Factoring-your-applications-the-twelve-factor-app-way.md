@@ -4,7 +4,6 @@ title:  "Factoring your applications the Twelve Factor App way"
 date:   2014-01-28 00:00:00
 categories: better-engineering-practices 
 description: 
-categories: better-engineering-practices
 tags: [practices, development, methodologies]
 
 ---

@@ -120,3 +120,21 @@ code{
     font: Consolas, "Liberation Mono", Courier, monospace;
 }
 
+/*****************************************************************************/
+/*
+/* font awesome
+/*
+/*****************************************************************************/
+
+.icon-cog {
+    color: #3399CC;
+    content: "\2605";
+}
+
+.fontIcon{
+    font-size: 50px;
+    margin-top: 30px;
+    padding-left: 35px;
+    padding-right: 15px;
+}
+

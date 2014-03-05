@@ -15,7 +15,7 @@ Use dig to query the "." (the root) name servers. What we see in the query below
 (.com), sponsored (.aero) and infrastructure (.arpa). 
 
 ```
-The command is of the form :
+# The command is of the form :
 	dig @server name type	
 
 ~$ dig
@@ -55,6 +55,79 @@ d.root-servers.net.	28237	IN	A	199.7.91.13
 
 ```
 
+### Use dig to query the IP of a Host Name
+
+This query will resolve the host to an IP address.
+
+```
+~$ dig www.cfii.ie
+
+; <<>> DiG 9.8.3-P1 <<>> www.cfii.ie
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41664
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cfii.ie.			IN	A
+
+;; ANSWER SECTION:
+www.cfii.ie.		3555	IN	A	81.17.250.59
+
+;; Query time: 134 msec
+;; SERVER: 10.20.130.20#53(10.20.130.20)
+;; WHEN: Wed Mar  5 11:59:58 2014
+;; MSG SIZE  rcvd: 45
+
+```
+
+### Tracing a NS query
+
+This query will do the same as above but the TRACE will show the iterative steps taken to resolve the IP across the various Name Servers that had to be quizzed.
+
+```
+~$ dig +trace www.cfii.ie
+
+; <<>> DiG 9.8.3-P1 <<>> +trace www.cfii.ie
+;; global options: +cmd
+.			20051	IN	NS	e.root-servers.net.
+.			20051	IN	NS	i.root-servers.net.
+.			20051	IN	NS	c.root-servers.net.
+.			20051	IN	NS	b.root-servers.net.
+.			20051	IN	NS	a.root-servers.net.
+.			20051	IN	NS	m.root-servers.net.
+.			20051	IN	NS	h.root-servers.net.
+.			20051	IN	NS	k.root-servers.net.
+.			20051	IN	NS	l.root-servers.net.
+.			20051	IN	NS	g.root-servers.net.
+.			20051	IN	NS	d.root-servers.net.
+.			20051	IN	NS	j.root-servers.net.
+.			20051	IN	NS	f.root-servers.net.
+;; Received 373 bytes from 10.131.50.50#53(10.131.50.50) in 1177 ms
+
+ie.			172800	IN	NS	gns1.domainregistry.ie.
+ie.			172800	IN	NS	ns-ie.nic.fr.
+ie.			172800	IN	NS	gns2.domainregistry.ie.
+ie.			172800	IN	NS	b.iedr.ie.
+ie.			172800	IN	NS	a.iedr.ie.
+ie.			172800	IN	NS	ns3.ns.esat.net.
+ie.			172800	IN	NS	c.iedr.ie.
+ie.			172800	IN	NS	d.iedr.ie.
+;; Received 418 bytes from 192.203.230.10#53(192.203.230.10) in 873 ms
+
+cfii.ie.		172800	IN	NS	ns1.blacknight.com.
+cfii.ie.		172800	IN	NS	ns2.blacknight.com.
+;; Received 79 bytes from 192.93.0.4#53(192.93.0.4) in 198 ms
+
+www.cfii.ie.		3600	IN	A	81.17.250.59
+cfii.ie.		3600	IN	NS	ns1.blacknight.com.
+cfii.ie.		3600	IN	NS	ns2.blacknight.com.
+;; Received 127 bytes from 78.153.212.176#53(78.153.212.176) in 6 ms
+
+```
+
+### Query a NS directly
+
 To see what name servers control .ie domains, query a root NS. These Authorities are deligated to administer the specified zone by the parent. The ADDITIONAL SECTION sepcifies who the query should be passed onto as these servers do not support recursive queries. 
 
 ``` bash
@@ -88,18 +161,19 @@ b.iedr.ie.		172800	IN	A	77.72.72.34
 
 ```
 
-##Determine your local DNS
+###Determine your local DNS
 
 	scutil --dns | grep nameserver\[[0-9]*\]
 
-Analysing the DNS data and settings
+
+###Additional DNS Queries
 
 ``` bash
-# Find a name server for a domain
-dig dcu.ie
-#	Query for Name Server
+# 	Determine your local DNS
+scutil --dns | grep nameserver\[[0-9]*\]
+#	Query for Name Server Records for a domain
 dig NS dcu.ie
-#	Query for Mail Exchange records
+#	Query for Mail Exchange Records for a domain
 dig MX dcu.ie
 
 # Query the name server for public website

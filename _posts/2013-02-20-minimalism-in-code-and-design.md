@@ -4,7 +4,6 @@ title:  "Minimalism in code and design"
 date:   2013-02-20 00:00:00
 categories: better-engineering-practices 
 description: 
-categories: better-engineering-practices
 tags: [practices, development]
 
 ---
