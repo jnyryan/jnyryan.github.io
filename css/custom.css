@@ -7,6 +7,7 @@ body {
     background-image: -moz-linear-gradient(#fcfcfc 10%,#f9f9f9 90%);
     background-image: -o-linear-gradient(#fcfcfc 10%,#f9f9f9 90%);
     background-image: linear-gradient(#fcfcfc 10%,#f9f9f9 90%);
+    font-family: Flux-Regular,SourceSansProRegular,Arial,sans-serif;
 }
 
 .blog-description {
@@ -126,15 +127,12 @@ code{
 /*
 /*****************************************************************************/
 
-.icon-cog {
-    color: #3399CC;
-    content: "\2605";
-}
-
 .fontIcon{
-    font-size: 50px;
-    margin-top: 30px;
-    padding-left: 35px;
-    padding-right: 15px;
+    font-size: 40px;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 0px;
+    color: #ffd343;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3399CC;
 }
-

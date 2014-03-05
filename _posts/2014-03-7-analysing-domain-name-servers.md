@@ -54,7 +54,7 @@ d.root-servers.net.	28237	IN	A	199.7.91.13
 ;; MSG SIZE  rcvd: 273
 
 ```
-
+<linebreak>
 ### Use dig to query the IP of a Host Name
 
 This query will resolve the host to an IP address.

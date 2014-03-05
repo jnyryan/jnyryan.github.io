@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Analysing a network with google enumeration"
-date:   2014-01-16 00:00:00
-categories: better-engineering-practices forensics-and-security playing-with-technology
+date:   2014-03-16 00:00:00
+categories: forensics-and-security
 description: 
-tags: [practices, development]
+tags: [security, hacking]
 
 ---
+http://www.exploit-db.com/google-dorks/
 
 Google searches alone can reveal a huge amount of information on networks and the data contained on them. These are just a few of the quick searches that will reveal information that could otherwise be considered to be unavailable to the public.
 
@@ -20,7 +21,7 @@ Google searches alone can reveal a huge amount of information on networks and th
 
 This is a very easy search to see if any spreadsheets are available publicly.
 
-	Filedype:xls site:.dcu.ie
+	Filetype:xls site:.dcu.ie
 
 3. Finding password files
 
