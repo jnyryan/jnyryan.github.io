@@ -127,7 +127,7 @@ code{
 /*
 /*****************************************************************************/
 
-.fontIcon{
+.fontIcon2{
     font-size: 40px;
     margin-top: 50px;
     padding-left: 15px;
@@ -135,4 +135,9 @@ code{
     color: #ffd343;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #3399CC;
+}
+
+.fontIcon{
+    margin-right: 5px;
+
 }

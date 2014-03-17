@@ -14,18 +14,13 @@ RSA security is based on the ***Integer Factorization Problem***, which is what 
 
 ###1. Key Generation
 
-- Generate 2 large distinct primes *p* and *q* of roughly the same size (e.g. 1024 each) 
-- Compute the modulus *N* where ```N=pq```
-- Compute Totient(φ) of *N* where ```φ(N)= (p–1)(q–1)```
-- Select random integer *e* as the public key component with:
-
-``` bash
-1 < e < φ(N), where 1 ≡ gcd(e, φ(N))
-i.e. *e* is relatively prime to N, so has an inverse so that decryption can occur.
+1. Generate 2 large distinct primes *p* and *q* of roughly the same size (e.g. 1024 each) 
+2. Compute the modulus *N* where ```N=pq```
+3. Compute Totient(φ) of *N* where ```φ(N)= (p–1)(q–1)```
+4. Select random integer *e* as the public key component with ```1 < e < φ(N), where 1 ≡ gcd(e, φ(N))```
+	- i.e. ***e*** is relatively prime to ***N*** and has an inverse so that decryption can occur.
 Common values for e include 3,17 and 65537 as they only have 2 bits set and make calculation easy using the square and multiply rule.
-```
-
-- Use Euclids Extended Algorithm to compute the invers of *e*, private key component *d* where
+5. Use Euclids Extended Algorithm to compute the inverse of *e*, private key component *d* where
 
 ```	
 1 < d < φ(N)
@@ -45,13 +40,13 @@ Now *d,p* and *q* are kept private or even better *p* and *q* destroyed!!
 
 We can encrypt *m* such that ```0<=m<n ``` using
 
-c ≡ m<sup>e</sup>(mod N)
+> c ≡ m<sup>e</sup>(mod N)
 
 ### 3. Decryption
 
 We can encrypt *c* such that ```0<=c<n ``` using
 
-m ≡ c<sup>d</sup> (mod N)
+> m ≡ c<sup>d</sup> (mod N)
 
 ##A Toy Example
 
@@ -69,7 +64,9 @@ Compute the modulus
 
 Compute Totient of *N*
 
-	φ(N) = (p−1)(q−1) = 6×10 = 60.
+	φ(N) = (p−1)(q−1) 
+	= 6×10 
+	= 60.
 
 Choose Public Key Component *e* 
 
@@ -78,7 +75,8 @@ Choose Public Key Component *e*
 Create Private Key Component*d*
 
 	ed ≡ 1(mod φ(N))
-	compute d=13 since 37×13 ≡ 481 ≡ 1 (mod 60).
+	since 37×13 ≡ 481 ≡ 1 (mod 60)
+	d=13
 
 From this we have
 
@@ -89,11 +87,11 @@ From this we have
 
 Suppose m = 2 then:
 
-c ≡ m<sup>e</sup>(mod N)≡237 (mod 77)≡51
+> c ≡ m<sup>e</sup>(mod N)≡237 (mod 77)≡51
 
 ###Decryption
 
 To recover m compute:
 
-m ≡ c<sup>d</sup> (mod N)≡5113 (mod 77)≡2
+> m ≡ c<sup>d</sup> (mod N)≡5113 (mod 77)≡2
 
