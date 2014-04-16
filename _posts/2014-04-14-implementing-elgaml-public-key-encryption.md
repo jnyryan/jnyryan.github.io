@@ -22,7 +22,7 @@ The method ***egKey*** will return a tupple (*p,α,x,y*) that will allow us to c
 
 From this:
 
-- The public key is (**p, α, y**)- The private key is **x**
+- The public key is ***(p, α, y)***- The private key is **x**
 
 ```python
 """Generate the keys needed for encryption of size s bites

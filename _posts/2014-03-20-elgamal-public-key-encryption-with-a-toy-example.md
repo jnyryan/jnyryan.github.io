@@ -20,13 +20,13 @@ ElGamal security is based on the ***Discrete Log Problem***, which is what we ca
 Generate a key-pair as follows:
 1. Select a large random prime *p* and a generator *α* of Z<sup>∗</sup><sub>p</sub>
 2. Generate a random integer x such that 1≤x≤p−2 
-3. Compute y = α<sup>x</sup>mod p4. public key is (***p, α, y***)5. private key is ***x***
+3. Compute y = α<sup>x</sup>mod p4. public key is ***(p, α, y)***5. private key is ***x***
 
 ### 2. Encryption
 
 Given a message m such that 0 ≤ m < p, any user B can encrypt m as follows: 
 
-1. Pick the integer k ∈ {1..p−2} uniformly at random.2. Compute c1 = α<sup>k</sup> mod p3. Compute c2 =m×y<sup>k</sup> (mod p)4. The ciphertext is the pair (***c1, c2***)
+1. Pick the integer k ∈ {1..p−2} uniformly at random.2. Compute c1 = α<sup>k</sup> mod p3. Compute c2 =m×y<sup>k</sup> (mod p)4. The ciphertext is the pair ***(c1, c2)***
 
 ### 3. Decryption
 
@@ -53,7 +53,7 @@ Compute a generator *g* of the multiplicative group Z∗p.
 Compute 
 	
 	ga (mod p)≡368 (mod p)≡65
-- Public key is (***p = 809, g = 3, y = 65***)
+- Public key is ***(p = 809, g = 3, y = 65)***
 - Private key is ***x = 68***
 
 ###Encryption
@@ -70,7 +70,7 @@ Computes:
 
 > c1 =gk =345
 > 
-> c2 = m * x<sup>k</sup> =517The ciphertext is (***c1||c2***)
+> c2 = m * x<sup>k</sup> =517The ciphertext is ***(c1||c2)***
 
 ###Decryption
 
