@@ -8,7 +8,7 @@ tags: [security, networks]
 
 ---
 An important part of any security setup is to know your network surroundings. The ***dig*** tool (Domain Information Groper) is ideal for this and allow you analyse the Domain Name Servers available to you network. This combined with ***nmap*** can reveal much that is interesting. 
-
+<linebreak>
 ##Analyse the DNS
 
 Use dig to query the "." (the root) name servers. What we see in the query below is the results of what servers will supply data on all top level domains e.g. countries (.ie), generics
@@ -54,7 +54,7 @@ d.root-servers.net.	28237	IN	A	199.7.91.13
 ;; MSG SIZE  rcvd: 273
 
 ```
-<linebreak>
+
 ### Use dig to query the IP of a Host Name
 
 This query will resolve the host to an IP address.

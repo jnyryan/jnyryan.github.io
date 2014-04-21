@@ -45,13 +45,25 @@ title: Home
   <ul class="posts">
       <hr>
     {% for post in site.posts %}
-      <li>
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <span><h6>Written by <a href="#">John Ryan</a> on {{ post.date | date_to_string }}.</h6></span>
-      </li>
-      {{ post.excerpt}}
-      <a href="{{ post.url }}">Read more &raquo;</a>
-      <hr />
+      <div class="row">
+        <div class="col-md-2">
+          <div class="blog-date">
+            <strong>{{ post.date | date: "%Y" }} </strong>
+            <br />
+            {{ post.date | date: "%B %d" }}
+          </div>
+        </div>
+        <div class="col-md-10">
+          <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <span><h6>Written by <a href="#">John Ryan</a> on {{ post.date | date_to_string }}.</h6></span>
+          </li>
+          {{ post.excerpt}}
+          <a href="{{ post.url }}">Read more &raquo;</a>
+          <hr />
+
+        </div>
+      </div> 
     {% endfor %}
   </ul>
 </div>
