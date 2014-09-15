@@ -8,7 +8,7 @@ title: Forensic Tools
 
 This is a list of tools for diagnostic analysis and repair of operating systems, hard drives and memory
 
-- [title: Forensic Tools](#title-forensic-tools)
+- [Forensic Tools](#title-forensic-tools)
 - [FORENSIC TOOLS](#forensic-tools)
 - [Linux Tools Installers](#linux-tools-installers)
 - [Applications](#applications)
@@ -31,38 +31,38 @@ This is a list of tools for diagnostic analysis and repair of operating systems,
 
 [Epic Browser](http://epicbrowser.com/)
 
-- Internet browser with extreme privacy 
+- Internet browser with extreme privacy
 
-[Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) 
+[Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
 
-- The Tor software protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, it prevents the sites you visit from learning your physical location, and it lets you access sites which are blocked. 
+- The Tor software protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, it prevents the sites you visit from learning your physical location, and it lets you access sites which are blocked.
 
-- The Tor Browser Bundle lets you use Tor on Windows, Mac OS X, or Linux without needing to install any software. It can run off a USB flash drive, comes with a pre-configured web browser to protect your anonymity, and is self-contained. 
+- The Tor Browser Bundle lets you use Tor on Windows, Mac OS X, or Linux without needing to install any software. It can run off a USB flash drive, comes with a pre-configured web browser to protect your anonymity, and is self-contained.
 
-[HTTrack](http://www.httrack.com/) 
+[HTTrack](http://www.httrack.com/)
 
 - Website Copier
-	
-- It allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer. HTTrack arranges the original site's relative link-structure. Simply open a page of the "mirrored" website in your browser, and you can browse the site from link to link, as if you were viewing it online. HTTrack can also update an existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable, and has an integrated help system. 
+
+- It allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer. HTTrack arranges the original site's relative link-structure. Simply open a page of the "mirrored" website in your browser, and you can browse the site from link to link, as if you were viewing it online. HTTrack can also update an existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable, and has an integrated help system.
 
 [Glary Utilities](http://www.glarysoft.com/)
 
-- The No. 1 Free, Powerful and All-in-one utility for cleaning your Windows PC. 
+- The No. 1 Free, Powerful and All-in-one utility for cleaning your Windows PC.
 Boosts PC speed and fixes frustrating errors, crashes and freezes
-Protects your privacy and wipe sensitive internet and chat history 
-Over 20 tools to maximize your Computer's performance 
+Protects your privacy and wipe sensitive internet and chat history
+Over 20 tools to maximize your Computer's performance
 
 [freeSSHd](http://www.freesshd.com/)
 
-- freeSSHd, like it's name says, is a free implementation of an SSH server. It provides strong encryption and authentication over insecure networks like Internet. Users can open remote console or even access their remote files thanks to built-in SFTP server. 
+- freeSSHd, like it's name says, is a free implementation of an SSH server. It provides strong encryption and authentication over insecure networks like Internet. Users can open remote console or even access their remote files thanks to built-in SFTP server.
 
 [cmdr](http://bliker.github.io/cmder/)
 
 - Cmder is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout. Looking sexy from the start.
 
 [USB Rubber Ducky](https://hakshop.myshopify.com/products/usb-rubber-ducky-deluxe)
-	
-Take Social Engineering to the next level with a USB Rubber Ducky Deluxe hidden inside an inconspicuous "thumb drive" case. All the fixings included. 
+
+Take Social Engineering to the next level with a USB Rubber Ducky Deluxe hidden inside an inconspicuous "thumb drive" case. All the fixings included.
 
 Since 2010 the USB Rubber Ducky has been a favorite amongst hackers, penetration testers and IT professionals. With origins as a humble IT automation proof-of-concept using an embedded dev-board, it has grown into a full fledged commercial Keystroke Injection Attack Platform. The USB Rubber Ducky captured the imagination of hackers with its simple scripting language, formidable hardware, and covert design.
 
@@ -90,25 +90,25 @@ in one simple package.
 
 [WindowsDataRecovery](http://www.western-digital-data-recovery.com)
 
-- Data Recovery (for Windows & Mac) can easily recover your lost, deleted or formatted files from various Western Digital hard drives such as Elements Desktop 1 TB, My Passport Essential, Caviar Green 2 TB etc. It can recover more than 500+ file types including documents, emails, photos, videos, archives and more. Both Windows & Mac versions are provided. Note: the program performs read-only procedure, so it is 100% risk-free and won’t do any damage to your WD drive. 
+- Data Recovery (for Windows & Mac) can easily recover your lost, deleted or formatted files from various Western Digital hard drives such as Elements Desktop 1 TB, My Passport Essential, Caviar Green 2 TB etc. It can recover more than 500+ file types including documents, emails, photos, videos, archives and more. Both Windows & Mac versions are provided. Note: the program performs read-only procedure, so it is 100% risk-free and won’t do any damage to your WD drive.
 
 [testDisk](http://www.cgsecurity.org/wiki/TestDisk_6.14_Release)
 
-- TestDisk is a powerful free data recovery program! It was primarily designed to help recover lost partitions and/or make non-booting disks bootable again when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally deleting your Partition Table). 
+- TestDisk is a powerful free data recovery program! It was primarily designed to help recover lost partitions and/or make non-booting disks bootable again when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally deleting your Partition Table).
 
 [photoRec](http://www.cgsecurity.org/wiki/TestDisk_6.14_Release) Same as above
 
-- PhotoRec is a File Recovery program designed to recover lost files; including video, documents and archives from Hard Disks, CDRom and lost pictures from digital camera memory (thus, its Photo Recovery name). PhotoRec ignores the filesystem and goes after the underlying data, so it can still find files even if your media's filesystem has been severely damaged or re-formatted (overwritten data, of course, can not be recovered). 
+- PhotoRec is a File Recovery program designed to recover lost files; including video, documents and archives from Hard Disks, CDRom and lost pictures from digital camera memory (thus, its Photo Recovery name). PhotoRec ignores the filesystem and goes after the underlying data, so it can still find files even if your media's filesystem has been severely damaged or re-formatted (overwritten data, of course, can not be recovered).
 
 [GetDataBack For NTFS](http://www.runtime.org/data-recovery-software.htm)
 
 - Do-it-yourself Data Recovery Software
 
-- Recover your files from an NTFS drive when the data is no longer accessible due to formatting, fdisk, virus attack, power or software failure. Get everything back even when the drive's partition table, boot record, Master File Table or root directory is lost or corrupt. 
+- Recover your files from an NTFS drive when the data is no longer accessible due to formatting, fdisk, virus attack, power or software failure. Get everything back even when the drive's partition table, boot record, Master File Table or root directory is lost or corrupt.
 
 [Acronis True Image 2014](http://www.acronis.com/)
 
-- Acronis True Image 2014 is a backup solution. It protects your content, recovers your data in case of any disasters, and syncs it with all your devices or across computers. Safe, reliable, easy – it’s the ultimate in digital protection. 
+- Acronis True Image 2014 is a backup solution. It protects your content, recovers your data in case of any disasters, and syncs it with all your devices or across computers. Safe, reliable, easy – it’s the ultimate in digital protection.
 
 
 ##FILE ANALYSIS
@@ -132,7 +132,7 @@ openssl
 - WinHex is in its core a universal hexadecimal editor, particularly helpful in the realm of computer forensics, data recovery, low-level data processing, and IT security. An advanced tool for everyday and emergency use: inspect and edit all kinds of files, recover deleted files or lost data from hard drives with corrupt file systems or from digital camera cards.
 
 [Hexview](http://www.softpedia.com/get/Office-tools/Other-Office-Tools/1HexView.shtml)
-	
+
 - HexView is a multiple document Hexadecimal viewer that can display, print, and print preview any file as a hex dump.
 
 [Hexedit](http://www.hexedit.com/)
@@ -180,7 +180,7 @@ Redline, Mandiant’s premier free tool, provides host investigative capabilitie
 - Identify processes more likely worth investigating based on the Redline Malware Risk Index (MRI) score.
 - Perform Indicator of Compromise (IOC) analysis. Supplied with a set of IOCs, the Redline - Portable Agent is automatically configured to gather the data required to perform the IOC analysis and an IOC hit result review.
 
-[Volatility](https://www.volatilesystems.com/default/volatility) 
+[Volatility](https://www.volatilesystems.com/default/volatility)
 
 Volatile memory artifact extraction utility framework
 
@@ -198,7 +198,7 @@ Volatile memory artifact extraction utility framework
 
 [SIFT](http://digital-forensics.sans.org/community/downloads)
 
-SANS Investigate Forensic Toolkit (SIFT) 
+SANS Investigate Forensic Toolkit (SIFT)
 
 - VMware Appliance
 - Ready to tackle forensics
@@ -258,7 +258,7 @@ ARPwatch
 
 ```
 	sudo apt-get install arpwatch
-```	
+```
 
 arpspoof [DNS Sniff] (http://www.monkey.org/~dugsong/dsniff/)
 
@@ -278,7 +278,7 @@ arpspoof [DNS Sniff] (http://www.monkey.org/~dugsong/dsniff/)
 
 - UNetbootin allows you to create bootable Live USB drives for Ubuntu, Fedora, and other Linux distributions without burning a CD. It runs on Windows, Linux, and Mac OS X.
 
-[Rufus](http://rufus.akeo.ie/) 
+[Rufus](http://rufus.akeo.ie/)
 
 - Rufus allows you to create bootable Live USB drives for Windows.
 
@@ -287,7 +287,7 @@ arpspoof [DNS Sniff] (http://www.monkey.org/~dugsong/dsniff/)
 - OSFClone is a free, self-booting solution which enables you to create or clone exact raw disk images quickly and independent of the installed operating system. In addition to raw disk images, OSFClone also supports imaging drives to the open Advance Forensics Format (AFF).
 
 [EasyBCD](http://www.softpedia.com/get/System/OS-Enhancements/EasyBCD.shtml)
-	
+
 - EasyBCD allows you to create a multiboot environment in order to run multiple operating systems on the same computer. The application also features BCD (Boot Configuration Data) Backup / Repair utilities that provide users with the possibility to reset the BCD configuration or to recreate and repair boot files.
 
 [BartPE](http://www.nu2.nu/pebuilder/)
@@ -295,7 +295,7 @@ arpspoof [DNS Sniff] (http://www.monkey.org/~dugsong/dsniff/)
 - Bart's PE Builder helps you build a "BartPE" (Bart Preinstalled Environment) bootable Windows CD-Rom or DVD from the original Windows XP or Windows Server 2003 installation/setup CD, very suitable for PC maintenance tasks.
 
 [PE Builder](http://www.nu2.nu/pebuilder/)
-	
+
 - Bart's PE Builder helps you build a "BartPE" (Bart Preinstalled Environment) bootable Windows CD-Rom or DVD from the original Windows XP or Windows Server 2003 installation/setup CD, very suitable for PC maintenance tasks.
 
 [make-pe3](http://www.msfn.org/board/topic/143529-make-pe3-program-to-create-portable-windows-7-pe/)
@@ -310,7 +310,7 @@ arpspoof [DNS Sniff] (http://www.monkey.org/~dugsong/dsniff/)
 
 [UserAssist](http://blog.didierstevens.com/programs/userassist/)
 
-- http://ad-pdf.s3.amazonaws.com/UserAssist%20Registry%20Key%209-8-08.pdf 
+- http://ad-pdf.s3.amazonaws.com/UserAssist%20Registry%20Key%209-8-08.pdf
 - There is also a good PDF explaining the User Assist key here User to view User assist keys
 
 ##VIRTUAL MACHINES TOOLS
@@ -355,7 +355,7 @@ dd is a command on Unix and Unix-like operating systems whose primary purpose is
 
 [dcfldd](http://dcfldd.sf.net)
 
-- dcfldd is an enhanced version of dd developed by the U.S. Department of Defense Computer Forensics Lab. 
+- dcfldd is an enhanced version of dd developed by the U.S. Department of Defense Computer Forensics Lab.
  It has some useful features for forensic investigators such as:
  - On-the-fly hashing of the transmitted data.
  - Progress bar of how much data has already been sent.
@@ -394,7 +394,7 @@ sleuthkit.org is the official web site for The Sleuth Kit™ and Autopsy™. Bot
 - Ntfsundelete -s
 
 [Recuva](http://www.piriform.com/recuva)
-	
+
 - recover deleted files
 - Accidentally deleted an important file? Lost something important when your computer crashed? No problem! Recuva recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player. And it's free!
 
