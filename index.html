@@ -47,10 +47,10 @@ title: Home
         <br>
     </div>
 
-  <h1 class="fa fa-book">  Blog Posts</h1>
+  <h1 class="fa fa-book">  Recent Blog Posts</h1>
   <ul class="posts">
       <hr>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:10 %}
       <div class="row">
         <div class="col-md-2">
           <div class="blog-date">
