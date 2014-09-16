@@ -1,7 +1,7 @@
 	<form action="http://getsimpleform.com/messages?form_api_token={{site.contactform_apitoken}}" method="post">
 
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='http://www.google.com' />
+        <input type='hidden' name='redirect_to' value='http://jnyryan.github.io' />
 
         <!-- all your input fields here.... -->
 

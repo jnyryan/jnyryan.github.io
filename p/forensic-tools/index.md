@@ -3,7 +3,7 @@ layout: default
 title: Security and Forensic Tools
 ---
 
-#Security / Forensic Tools
+#Security & Forensic Tools
 
 This is a list of tools I've collected over the years for diagnostic analysis, penetration testing and repair of operating systems, hard drives and memory ...
 
