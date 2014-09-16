@@ -77,3 +77,17 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
+
+.blog-footer {
+    background-color: #2b5b84;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
+    background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
+    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    margin-top: 5px;
+}
