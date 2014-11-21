@@ -15,14 +15,12 @@
   <title>{{ page.title }}</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="{{ relative }}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{ relative }}bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{ relative }}/css/blog.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ relative }}/css/custom.css" />
-  <link href="{{ relative }}/css/customblog.css" rel="stylesheet">
-  <link href="{{ relative }}/css/sidebar.css" rel="stylesheet">
+  <link href="/css/sidebar.css" rel="stylesheet">
+  <link href="/css/customsite.css" rel="stylesheet">
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -37,55 +35,39 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="sidebar-module">
+      <div class="profilepic">
 
-  <div id="wrapper">
+        <img src="/img/mybot.png" alt="Profile Picture" style="width: 160px; background-color:white;">
 
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <div class="profilepic">
-
-	<img src="{{ relative }}img/mybot.png" alt="Profile Picture" style="width: 160px; background-color:white;">
-
-</div>
-          <div class="col-md-12">
-            <div class="blog-header">
-              <h1 class="blog-title">
-                                      <i class="fa fa-code-fork"></i>{{ site.name }}</h1>
-              <p class="lead blog-description">code / design / play</p>
-            </div>
-          </div>
-
-          <nav class="blog-nav">
-            <a class="blog-nav-item" href="/">Home</a>
-            <a class="blog-nav-item" href="/p/blog">Blog</a>
-            <a class="blog-nav-item" href="/p/archive">Archive</a>
-            <a class="blog-nav-item" href="/p/forensic-tools">Security & Forensic Tools</a>
-            <a class="blog-nav-item" href="https://github.com/jnyryan/feedback/issues/new">Contact</a>
-
-          </nav>
-        </li>
-
-      </ul>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            {{content}}
-          </div>
+      </div>
+      <div>
+        <div class="blog-header">
+          <h1 class="blog-title">
+          <i class="fa fa-code-fork"></i>{{ site.name }}</h1>
+          <p class="lead blog-description">code / design / play</p>
         </div>
       </div>
-    </div>
-    <!-- /#page-content-wrapper -->
 
+      <nav class="blog-nav">
+        <a class="blog-nav-item" href="/">Home</a>
+        <a class="blog-nav-item" href="/p/blog">Blog</a>
+        <a class="blog-nav-item" href="/p/archive">Archive</a>
+        <a class="blog-nav-item" href="/p/forensic-tools">Security & Forensic Tools</a>
+        <a class="blog-nav-item" href="https://github.com/jnyryan/feedback/issues/new">Contact</a>
+
+      </nav>
+
+    </div>
+    <div class="main-module">
+      <div class="main-module-container">
+        <div>
+        {{content}}
+      </div>
+      <div>
+    </div>
   </div>
-  <!-- /#wrapper -->
 
 
   <!-- Bootstrap core JavaScript

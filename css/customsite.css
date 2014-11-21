@@ -1,0 +1,130 @@
+.blog-masthead {
+  background-color: #2b5b84;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
+  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
+  background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
+  background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
+  background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
+  background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
+  -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+  -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+  margin-bottom: 5px;
+}
+
+.blog-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#blog-description {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.blog-main {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#blog-masthead{
+  margin-bottom: 5px;
+}
+
+.blog-title{
+  color: #dcdcdc;
+}
+
+.sidebar-module h4 {
+    color: #ffd343;
+}
+
+.sidebar-module {
+
+    background-color: #2b5b84;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
+    background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
+    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    padding-left: 35px;
+    padding-top: 50px
+}
+
+.sidebar-module a{
+    color: #fff;
+}
+
+.sidebar-module a:hover{
+    color: #ffd343;
+}
+
+@media(min-width: 1200px){
+    .container {
+        width: 1200px;
+    }
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+.blog-footer {
+    background-color: #2b5b84;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
+    background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
+    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    margin-top: 5px;
+}
+
+.blog-footer a {
+    color:white;
+}
+
+.profilepic img { border-radius: 50%;-moz-border-radius:50%;-webkit-border-radius:50% }
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.main-module {
+  position: absolute;
+  right: 0;
+  min-height: 100%;
+  width: 80%;
+  background: #fff;
+}
+
+.main-module-container {
+  padding: 0px 70px 0px 100px;
+  max-width: 700px;
+}
+
+.blog-description {
+  font-size: 20px;
+  color: #ffd343;
+}
