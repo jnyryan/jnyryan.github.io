@@ -1,153 +1,183 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/foundation.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
-    <script src="/js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-    
-        <!-- Nav Bar -->
- 
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="nav-bar right">
-       <ul class="button-group">
-         <li><a href="#" class="button">home</a></li>
-          <li><a href="/p/contact" class="button">contact</a></li>
-       </ul>
-      </div>
-     <h1 class="title"><a href="/">{{ site.name }}</a>&nbsp;
-     <br>      
-     <small>{{site.slackline}}</small>
-     </h1>
-     <div class="text-center">
-      <hr />
-      
-	<a class="extra" href="/">HOME</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/archive">ARCHIVE</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/pages">PAGES</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/categories">CATEGORIES</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="extra" href="/p/tags">TAGS</a>
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
+<html lang="en">
 
-      <hr />
-      	</div>      
-    </div>
-  </div>
- 
-  <!-- End Nav -->
- 
- 
-  <!-- Main Page Content and Sidebar -->
- 
-  <div class="row">
- 
-    <!-- Main Blog Content -->
-    <div class="large-9 columns" role="content">
- 
-      {{content}}
- 
-    </div>
- 
-    <!-- End Main Content -->
- 
- 
-    <!-- Sidebar -->
- 
-    <aside class="large-3 columns">
-     
-	<div class="panel">
-        <h5>Template Features</h5>
-	<ul class="side-nav">
-      		<li>Blog Entries</li>
-        	<li>Categories</li>
-         	<li>Tags</li>
-          	<li>Pages</li>
-           	<li>Post Comments using DISQUS</li>
-            	<li>Contact form using SimpleForm</li>
-            	<li>Google Analytics</li>
-            	<li>Heroku Deployment</li>
-            	<a href="https://github.com/jnyryan/jekyll-foundation-quickstart">Read More →</a>
-      </ul>
-      </div>
-  
-      <h5>Pages</h5>
-      <ul class="side-nav">
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if group == null or group == node.group %}
-              {% if page.url == node.url %}
-              <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-              {% else %}
-              <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-              {% endif %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      {% assign pages_list = nil %}
-      {% assign group = nil %}
-      </ul>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John A Ryan">
+  <meta property="og:image" content="http://jnyryan.github.io/img/bloglink.png" />
+  <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
 
-      <h5>Links</h5>
-      <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
-      </ul>
- 
-   	<h5>About</h5>
-      <ul class="side-nav">
-        <li>Created by John Ryan <a href="http://jnyryan@hithub.io">jnyryan@hithub.io</a></li>
-        <li><a href="https://github.com/jnyryan/jekyll-foundation-quickstart">Source Code</a></li>
-      </ul>
- 
-    </aside>
- 
-    <!-- End Sidebar -->
-  </div>
- 
-  <!-- End Main Content and Sidebar -->
- 
- 
-  <!-- Footer -->
- 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
+  <title>{{ page.title }}</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ relative }}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ relative }}bower_components/font-awesome/css/font-awesome-min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ relative }}/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ relative }}/css/custom.css" />
+  <link href="{{ relative }}/css/customblog.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css"></style>
+  <style id="holderjs-style" type="text/css"></style>
+</head>
+
+<body>
+
+  <div class="blog-masthead">
+
+    <div class="container">
       <div class="row">
-        <div class="large-6 columns">
-          <p>© Copyright no one at all. Go to town.</p>
+
+        <div class="col-md-12">
+          <div class="blog-header">
+            <h1 class="blog-title">
+                        <i class="fa fa-code-fork"></i>{{ site.name }}</h1>
+            <p class="lead blog-description">code / design / play</p>
+          </div>
         </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
+
+      </div>
+
+
+
+      <nav class="blog-nav">
+        <a class="blog-nav-item" href="/">Home</a>
+        <a class="blog-nav-item" href="/p/blog">Blog</a>
+        <a class="blog-nav-item" href="/p/archive">Archive</a>
+        <a class="blog-nav-item" href="/p/forensic-tools">Security & Forensic Tools</a>
+        <a class="blog-nav-item" href="https://github.com/jnyryan/feedback/issues/new">Contact</a>
+
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-9 blog-main">
+        {{content}}
+
+      </div>
+      <!-- /.blog-main -->
+
+      <div class="col-sm-3 blog-sidebar">
+
+        <div class="sidebar-module">
+          <h4>Portfolio</h4>
+          <ol class="list-unstyled">
+            <li><a class="fontIcon fa fa-github-square" href="https://github.com/jnyryan?tab=repositories">  Code on GitHub</a>
+            </li>
+            <li><a class="fontIcon fa fa-github-alt" href="https://gist.github.com/jnyryan">  Gists on GitHub</a>
+            </li>
+            <li><a class="fontIcon fa fa-terminal" href="https://rubygems.org/profiles/jnyryan">  My RubyGems</a>
+            </li>
+            <li><a class="fontIcon fa fa-cloud" href="https://registry.hub.docker.com/search?q=jnyryan">  Docker Hub</a>
+            </li>
+            <li><a class="fontIcon fa fa-cloud" href="https://launchpad.net/~jnyryan">  Personal Package Archive</a>
+            </li>
+            <li><a class="fontIcon fa fa-twitter-square" href="https://twitter.com/jnyryan">  Twitter</a>
+            </li>
+            <li><a class="fontIcon fa fa-linkedin-square" href="http://ie.linkedin.com/in/jaryan">  LinkedIn</a>
+            </li>
+          </ol>
+        </div>
+
+        {% include /tag_cloud %} {% include /archive_list %}
+
+      </div>
+      <!-- /.blog-sidebar -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <div class="blog-footer">
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4 text-left">
+              <div><a href="/">Home</a>
+                </li>
+              </div>
+              <div><a href="/p/blog">Blog</a>
+                </li>
+              </div>
+              <div><a href="/p/archive">Archive</a>
+                </li>
+              </div>
+              <div><a href="/p/forensic-tools">Security & Forensic Tools</a>
+                </li>
+              </div>
+              <div><a href="https://github.com/jnyryan/feedback/issues/new">Contact</a>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-left">
+              <ol class="list-unstyled">
+                <li><a class="fontIcon fa fa-github-square" href="https://github.com/jnyryan?tab=repositories">  Code on GitHub</a>
+                </li>
+                <li><a class="fontIcon fa fa-github-alt" href="https://gist.github.com/jnyryan">  Gists on GitHub</a>
+                </li>
+                <li><a class="fontIcon fa fa-terminal" href="https://rubygems.org/profiles/jnyryan">  My RubyGems</a>
+                </li>
+                <li><a class="fontIcon fa fa-cloud" href="https://registry.hub.docker.com/search?q=jnyryan">  Docker Hub</a>
+                </li>
+              </ol>
+            </div>
+
+            <div class="col-md-4 text-left">
+              <ol class="list-unstyled">
+                <li><a class="fontIcon fa fa-cloud" href="https://launchpad.net/~jnyryan">  Personal Package Archive</a>
+                </li>
+                <li><a class="fontIcon fa fa-twitter-square" href="https://twitter.com/jnyryan">  Twitter</a>
+                </li>
+                <li><a class="fontIcon fa fa-linkedin-square" href="http://ie.linkedin.com/in/jaryan">  LinkedIn</a>
+                </li>
+              </ol>
+            </div>
+
+
+          </div>
+        </div>
+        <br/>
+        <div class="col-md-12">
+          <p>
+          &copy; 2014 John Ryan with help from <a href="http://jekyllrb.com/" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
         </div>
       </div>
     </div>
-  </footer>
-    
-    
-    
-    <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script> 
-    {% if site.analytics_enabled %}
-      {% include /google_analytics %}
-    {% endif %}
-  </body>
+
+
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+================================================== -->
+
+  {% if site.analytics_enabled %} {% include /google_analytics %} {% endif %}
+
+</body>
+
 </html>
