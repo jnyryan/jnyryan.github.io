@@ -1,0 +1,27 @@
+{
+  "name": "jnyryan.github.io",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jnyryan/jnyryan.github.io",
+  "authors": [
+    "John Ryan <jnyryan@gmail.com>"
+  ],
+  "description": "my blog",
+  "main": "index.html",
+  "keywords": [
+    "blog",
+    "security",
+    "development"
+  ],
+  "license": "NONE",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
