@@ -1,3 +1,21 @@
+html {
+  font-family:Flux-Regular,SourceSansProRegular,Arial,sans-serif
+  font-style: normal;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  font-size:18px;
+}
+
+h1{font-size:40px}
+
+a{
+
+}
+
+
 .blog-masthead {
   background-color: #2b5b84;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
@@ -17,11 +35,12 @@
   padding-bottom: 5px;
 }
 
-#blog-description {
+.blog-description {
   margin-bottom: 10px;
-  font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.4;
+  font-size: 20px;
+  color: #ffd343;
 }
 
 .blog-main {
@@ -62,10 +81,13 @@
 
 .sidebar-module a{
     color: #fff;
+    text-shadow: 0 1px #000;
 }
 
 .sidebar-module a:hover{
     color: #ffd343;
+    text-decoration:none;
+    transition: color 0.3s;
 }
 
 @media(min-width: 1200px){
@@ -122,9 +144,4 @@ ul, menu, dir {
 .main-module-container {
   padding: 0px 70px 0px 100px;
   max-width: 700px;
-}
-
-.blog-description {
-  font-size: 20px;
-  color: #ffd343;
 }
