@@ -3,13 +3,12 @@ layout: post
 title:  "Implementing classic RSA Encryption"
 date:   2014-03-21 00:00:00
 categories: forensics-and-security
-description: 
+description:
 tags: [development, cryptography, security]
 
 ---
 
 I figure the best way to get to know something is to do it, and now i want to know how basic RSA Cryptography works. In this post, i'm going to implement the methods required for RSA. Taking a top down approach and will implement the required functions as needed.
-<linebreak>
 
 The important thing to remember is that these are designed to work on large numbers, i tested these on numbers with 300 digits!
 
@@ -22,6 +21,8 @@ These are the main methods used to turn plaintext into ciphertext. not much too 
 def rsaEnc(n,e,m):
 	return expm(m, e, n)
 ```
+
+<linebreak>
 
 ``` python
 """decrypt a cipher c, with private key d using modulus n
@@ -70,7 +71,7 @@ def expm( a, k, n):
 
 ### Create the Primes
 
-Generate the primes used to base the encryption on. This will give a prime with a probability of 1/2**30 
+Generate the primes used to base the encryption on. This will give a prime with a probability of 1/2**30
 
 ``` python
 import random
@@ -118,7 +119,7 @@ def egcd(a, b):
         q, r = b//a, b%a
         m, n = x-u*q, y-v*q
         b,a, x,y, u,v = a,r, u,v, m,n
-    return b, x, y 
+    return b, x, y
 ```
 
 ``` python
@@ -130,7 +131,7 @@ def invm(m, a):
 	if g != 1:
 		return None  # modular inverse does not exist
 	else:
-		return x % m	
+		return x % m
 ```
 
 With all these done, you should have a working version of RSA. It's not very robust and will be slow at very large numbers - but the theory is there.

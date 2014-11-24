@@ -3,16 +3,14 @@ layout: post
 title:  "Implementing ElGamal Public Key Encryption"
 date:   2014-04-14 00:00:00
 categories: forensics-and-security
-description: 
+description:
 tags: [development, cryptography, security]
 
 ---
 
-I've already looked at other public key encryption methods so now I'll take a look at writing a classic implementation using ElGamaI. Here we'll create the methods required to do the work and borrow some small functions from the crypto libraries, since I already wrote them in a previous post. 
+I've already looked at other public key encryption methods so now I'll take a look at writing a classic implementation using ElGamaI. Here we'll create the methods required to do the work and borrow some small functions from the crypto libraries, since I already wrote them in a previous post.
 
 Since ElGamal is based on the Discrete Log problem a little bit of Group Theory is required to understand what is going on, or you can just implement it and see it work.
-
-<linebreak>
 
 ### Key Generation methods
 
@@ -24,7 +22,7 @@ From this:
 
 - The public key is ***(p, α, y)***- The private key is **x**
 
-```python
+{% highlight ruby %}
 """Generate the keys needed for encryption of size s bites
 import random
 def egKey(s):
@@ -33,7 +31,8 @@ def egKey(s):
 	x = random.randint(1, p-2)
 	y = pow(a,x,p)
 	return p, a, x, y
-```
+{% endhighlight %}
+<linebreak>
 
 The following two methods are utility functions to allow us to calculate the prime and generator
 
@@ -52,7 +51,7 @@ def get_safe_prime(s):
 """create a generator for the prime from the multiplicitive group defined by the safe prime
 def get_generator(safe_prime):
 	while(True):
-          alpha = random.randint(2, safe_prime-1) 
+          alpha = random.randint(2, safe_prime-1)
           if((safe_prime-1)%alpha != 1):
             return alpha
 ```

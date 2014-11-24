@@ -1,0 +1,75 @@
+---
+layout: default
+title: Home
+---
+
+<div id="home">
+<br>
+    <p>
+        I code, design, mentor, manage and play with technology. These are my musings on various areas of technology, security and computer forensics...
+    </p>
+   <br>
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="category-description">
+            <h4 class="widget-title"><em>Engineering Practices</em></h4>
+            <p style='text-align: justify;'>I have spent many years building up and managing strong development environments - architecting teams, systems and strategies.<br/>
+              Getting the mix of policy and creativity right can be a challenge and I've
+              learned a few things along the way. </p>
+            <!--p><a class="readmore" href="{{ relative }}/p/categories">Read more &raquo;</a></p-->
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="category-description">
+            <h4 class="widget-title"><em>Forensics and Security</em></h4>
+            <p style='text-align: justify;'>
+                As the internet-of-things grows, so does the necessity for computer security in companies who previously didn't consider themselves as 'tech'. <br/>
+                With that in mind and my interest in 'Getting under the hood', I went back to University and did a Masters Degree in Security and Computer Forensics.
+            </p>
+            <!--p><a class="readmore" href="{{ relative }}/p/categories">Read more &raquo;</a></p-->
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div class="category-description">
+            <h4 class="widget-title"><em>Playing with Technology</em></h4>
+            <p style='text-align: justify;'>
+                There is an awful lot of cool useful free (and not so free) technology out there – and once you know about it, it can make your life a whole lot easier. <em>
+                  <br/>Also - it's fun to play with...</em>
+            </p>
+            <!--p><a class="readmore" href="{{ relative }}/p/categories">Read more &raquo;</a></p-->
+        </div>
+        </div>
+
+
+        <br>
+    </div>
+
+  <h1 class="fa fa-book">  Recent Blog Posts</h1>
+  <ul class="posts">
+      <hr>
+    {% for post in site.posts limit:10 %}
+      <div class="row">
+        <div class="col-md-2">
+          <div class="blog-date">
+            <strong>{{ post.date | date: "%Y" }} </strong>
+            <br />
+            {{ post.date | date: "%B %d" }}
+          </div>
+        </div>
+        <div class="col-md-10">
+          <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <span><h6>Written by <a href="#">John Ryan</a> on {{ post.date | date_to_string }}.</h6></span>
+          </li>
+          {{ post.excerpt}}
+          <a href="{{ post.url }}">Read more &raquo;</a>
+          <hr />
+
+        </div>
+      </div>
+    {% endfor %}
+  </ul>
+</div>
