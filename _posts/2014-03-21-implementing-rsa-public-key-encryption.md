@@ -17,7 +17,7 @@ The important thing to remember is that these are designed to work on large numb
 These are the main methods used to turn plaintext into ciphertext. not much too them, but as you can see we do not have the public key values (e,n) and private key values (d,n) yet.
 
 ```python
-"""encrypt a message m, with public key e using modulus n
+#encrypt a message m, with public key e using modulus n
 def rsaEnc(n,e,m):
 	return expm(m, e, n)
 ```
@@ -25,7 +25,7 @@ def rsaEnc(n,e,m):
 <linebreak>
 
 ``` python
-"""decrypt a cipher c, with private key d using modulus n
+#decrypt a cipher c, with private key d using modulus n
 def rsaDec(n,d,c):
 	return expm(c, d, n)
 ```
@@ -33,22 +33,22 @@ def rsaDec(n,d,c):
 This is the function that does the magic. It creates out public and private key pairs.
 
 ```python
-"""Generate the keys needed for encryption of size s bites
+#Generate the keys needed for encryption of size s bites
 def rsaKey(s):
-	"""create 2 large primes of size s
+	#create 2 large primes of size s
 	p=create_prime(s)
 	q=create_prime(s)
-	"""calculate their modulus
+	#calculate their modulus
 	n=p*q
-	"""calculate their totient
+	#calculate their totient
 	phi=(p-1)*(q-1)
-	"""choose a encryption exponent e such that, 1<e<phi and 1=gcd(e,phi)
+	#choose a encryption exponent e such that, 1<e<phi and 1=gcd(e,phi)
 	e=1
 	while e < phi:
 		if(1==gcd(e,p))
 			break
 		e=e+1
-	"""determine the decryption exponent d, which is the modular inverse of e
+	#determine the decryption exponent d, which is the modular inverse of e
 	d=p3_invm.invm(phi,e)
 	return n,e,d
 ```
@@ -58,7 +58,7 @@ def rsaKey(s):
 Use the ***square and multiply*** method to do the exponentiation. A fast method of raising to a power is required as this is how every block is encrypted and decrypted. Imagine raising to a power that's 1024 digits in length - you will have to be efficient.
 
 ``` python
-"""Calulate a**k modulo m.
+#Calulate a**k modulo m.
 def expm( a, k, n):
 	r = 1
 	bits = list(bin(k)[2:])
@@ -75,7 +75,7 @@ Generate the primes used to base the encryption on. This will give a prime with 
 
 ``` python
 import random
-"""Generate a Prime using Fermats Theorem of d bits
+# Generate a Prime using Fermats Theorem of d bits
 def prime(d):
 	isprime = False
 	while isprime ==  False:
@@ -98,7 +98,7 @@ def is_prime(n, t):
 ### Calculate the greatest common divisor
 
 ``` python
-""" Use Euclid's algorithm to implement the routine to the calculate the Greatest Common Divisor of a and b.
+# Use Euclid's algorithm to implement the routine to the calculate the Greatest Common Divisor of a and b.
 def gcd(a, b):
     while b > 0:
         a, b = b, a%b

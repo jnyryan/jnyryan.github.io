@@ -9,7 +9,13 @@ body{
   font-size:18px;
 }
 
+.posts h1{
+  margin-left: -35px;
+}
 
+.posts h6{
+  margin-left: -35px;
+}
 
 a{
 

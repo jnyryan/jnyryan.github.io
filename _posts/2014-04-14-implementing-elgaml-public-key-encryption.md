@@ -16,14 +16,17 @@ Since ElGamal is based on the Discrete Log problem a little bit of Group Theory 
 
 First we need to create the Modulus (p), Generator (α), Private Key (x) and Public Key Component (y).
 
-The method ***egKey*** will return a tupple (*p,α,x,y*) that will allow us to create the public key along with it's associated private key.
+The method ***egKey*** will return a tupple (*p,α,x,y*) that will allow us to create the public key along with it's associated private key. From this function:
 
-From this:
 
 - The public key is ***(p, α, y)***- The private key is **x**
 
-{% highlight ruby %}
-"""Generate the keys needed for encryption of size s bites
+
+
+{% highlight python linenos %}
+
+
+#Generate the keys needed for encryption of size s bites
 import random
 def egKey(s):
 	p = get_safe_prime(s)
@@ -31,13 +34,15 @@ def egKey(s):
 	x = random.randint(1, p-2)
 	y = pow(a,x,p)
 	return p, a, x, y
+
 {% endhighlight %}
+
 <linebreak>
 
 The following two methods are utility functions to allow us to calculate the prime and generator
 
 ``` python
-"""create a safe prime
+#create a safe prime
 def get_safe_prime(s):
 	safe_prime = 0
 	while(True):
@@ -48,7 +53,7 @@ def get_safe_prime(s):
 ```
 
 ``` python
-"""create a generator for the prime from the multiplicitive group defined by the safe prime
+#create a generator for the prime from the multiplicitive group defined by the safe prime
 def get_generator(safe_prime):
 	while(True):
           alpha = random.randint(2, safe_prime-1)
@@ -63,7 +68,7 @@ The encryption method ***egEnc*** takes the public key components along with a m
 The cipher text is the pair (**c1, c2**)
 
 ```python
-"""
+
 def egEnc(p, a, y, m):
 	k = random.randint(1, p-2)
 	c1 = pow(a,k,p)
@@ -76,7 +81,7 @@ def egEnc(p, a, y, m):
 The decryption methof ***egDec*** takes the modulus, private key and the cipher text pair and returns the message, *m*.
 
 ```python
-"""
+
 def egDec(p, x, c1, c2):
 	m = (pow(c1, p-1-x)*c2)%p
 	return m

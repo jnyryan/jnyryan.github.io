@@ -3,20 +3,20 @@ layout: post
 title:  "Analysing Domain Name Servers"
 date:   2014-03-7 00:00:00
 categories: forensics-and-security
-description: 
+description:
 tags: [security, networks]
 
 ---
-An important part of any security setup is to know your network surroundings. The ***dig*** tool (Domain Information Groper) is ideal for this and allow you analyse the Domain Name Servers available to you network. This combined with ***nmap*** can reveal much that is interesting. 
-<linebreak>
+An important part of any security setup is to know your network surroundings. The ***dig*** tool (Domain Information Groper) is ideal for this and allow you analyse the Domain Name Servers available to you network. This combined with ***nmap*** can reveal much that is interesting.
+
 ##Analyse the DNS
 
 Use dig to query the "." (the root) name servers. What we see in the query below is the results of what servers will supply data on all top level domains e.g. countries (.ie), generics
-(.com), sponsored (.aero) and infrastructure (.arpa). 
+(.com), sponsored (.aero) and infrastructure (.arpa).
 
-```
+``` bash
 # The command is of the form :
-	dig @server name type	
+	dig @server name type
 
 ~$ dig
 
@@ -54,12 +54,12 @@ d.root-servers.net.	28237	IN	A	199.7.91.13
 ;; MSG SIZE  rcvd: 273
 
 ```
-
+<linebreak>
 ### Use dig to query the IP of a Host Name
 
 This query will resolve the host to an IP address.
 
-```
+``` bash
 ~$ dig www.cfii.ie
 
 ; <<>> DiG 9.8.3-P1 <<>> www.cfii.ie
@@ -85,7 +85,7 @@ www.cfii.ie.		3555	IN	A	81.17.250.59
 
 This query will do the same as above but the TRACE will show the iterative steps taken to resolve the IP across the various Name Servers that had to be quizzed.
 
-```
+``` bash
 ~$ dig +trace www.cfii.ie
 
 ; <<>> DiG 9.8.3-P1 <<>> +trace www.cfii.ie
@@ -128,7 +128,7 @@ cfii.ie.		3600	IN	NS	ns2.blacknight.com.
 
 ### Query a NS directly
 
-To see what name servers control .ie domains, query a root NS. These Authorities are deligated to administer the specified zone by the parent. The ADDITIONAL SECTION sepcifies who the query should be passed onto as these servers do not support recursive queries. 
+To see what name servers control .ie domains, query a root NS. These Authorities are deligated to administer the specified zone by the parent. The ADDITIONAL SECTION sepcifies who the query should be passed onto as these servers do not support recursive queries.
 
 ``` bash
 
@@ -186,14 +186,14 @@ dig @ns2-ext.dcu.ie www.dcu.ie
 ##Request a Zone Transfer
 
 This is a request that is made by DNS servers to an authority to refresh their cache
-	
+
 	dig @heanet.ie dit.ie axfr
 
 ##Analyse a mail exchange to see if it's an open relay
 
 
-Check whether any of the mail servers you discovered earlier can act as 
-an open mail relay. To conduct the test, connect to a mail server from the 
+Check whether any of the mail servers you discovered earlier can act as
+an open mail relay. To conduct the test, connect to a mail server from the
 command line:
 
 ``` bash
@@ -213,14 +213,13 @@ This is a message to you.
 .
 ```
 
-The above will succeed in sending a message to yourself from a spoofed e-mail 
-address (note how the mail server does not request authentication). If you 
-can do the same from outside DCU then the mail server is not securely 
+The above will succeed in sending a message to yourself from a spoofed e-mail
+address (note how the mail server does not request authentication). If you
+can do the same from outside DCU then the mail server is not securely
 configured and is acting as an “open mail relay”.
 
 ##Analyse the network architecture
 
 The following will search silently for all ftp,telnet, web and DNS servers listening on the network
-	
-	nmap -sS -p:21,23,80,57 192.188.1.0-255 
 
+	nmap -sS -p:21,23,80,57 192.188.1.0-255
