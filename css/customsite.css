@@ -9,18 +9,6 @@ body{
   font-size:18px;
 }
 
-.posts h1{
-  margin-left: -35px;
-}
-
-.posts h6{
-  margin-left: -35px;
-}
-
-a{
-
-}
-
 
 .blog-masthead {
   background-color: #2b5b84;
@@ -150,4 +138,35 @@ ul, menu, dir {
 .main-module-container {
   padding: 0px 70px 0px 100px;
   max-width: 970px;
+}
+/*
+ Post Styles
+*/
+.post-header{
+  margin-left: -35px;
+}
+
+.icon-header{
+  margin-right: 5px;
+  color: #dfdfdf;
+  font-size:1.4em;
+}
+
+pre
+{
+
+  background: #f9f9f9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f9f9f9 0%, #e2e2e2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f9f9f9 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f9f9f9 0%,#e2e2e2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f9f9f9 0%,#e2e2e2 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f9f9f9 0%,#e2e2e2 100%); /* W3C */
+
+  border: 1px solid silver;
+  box-shadow: 3px 3px 5px #535353 ;
+  border-radius: 5px;
+  margin: 15px 7px;
+  padding: 7px 12px;
+  overflow-x: auto;
 }
