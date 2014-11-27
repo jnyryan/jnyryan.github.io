@@ -18,11 +18,10 @@
   <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="/css/syntax.css" rel="stylesheet">
-  <link href="/css/dashboard.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="/css/styles.css" rel="stylesheet">
-  <link href="/css/customsite1.css" rel="stylesheet">
+  <link href="/css/sidebar.css" rel="stylesheet">
+  <link href="/css/customsite.css" rel="stylesheet">
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -37,42 +36,39 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="sidebar-module">
+      <div class="profilepic">
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3 col-md-2 sidebar">
-          <div class="profilepic">
-
-            <img src="/img/mybot.png" alt="Profile Picture" style="width: 160px; background-color:white;">
-
-          </div>
-          <div>
-            <div class="blog-header">
-              <h1 class="blog-title">{{ site.name }}</h1>
-                <p class="lead blog-description">code / design / play</p>
-              </div>
-            </div>
-
-            <ul class="">
-              <li><a href="/">Home</a></li>
-              <!--<li><a href="/p/about">About</a></li>-->
-              <li><a href="/p/blog">Blog Archive</a></li>
-              <!--<li><a href="/p/portfolio">Portfolio</a></li>-->
-              <li><a href="/p/forensic-tools">Security & Forensic Tools</a></li>
-              <li><a href="https://github.com/jnyryan/feedback/issues/new">Contact</a></li>
-            </ul>
-
+        <img src="/img/mybot.png" alt="Profile Picture" style="width: 160px; background-color:white;">
 
       </div>
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div>
+        <div class="blog-header">
+          <h1 class="blog-title">
+          <i class="fa fa-code-fork"></i>{{ site.name }}</h1>
+          <p class="lead blog-description">code / design / play</p>
+        </div>
+      </div>
 
+      <ul class="">
+        <li><a href="/">Home</a></li>
+        <!--<li><a href="/p/about">About</a></li>-->
+        <li><a href="/p/blog">Blog Archive</a></li>
+        <!--<li><a href="/p/portfolio">Portfolio</a></li>-->
+        <li><a href="/p/forensic-tools">Security & Forensic Tools</a></li>
+        <li><a href="https://github.com/jnyryan/feedback/issues/new">Contact</a></li>
+      </ul>
 
+    </div>
+    <div class="main-module">
+      <div class="main-module-container">
+        <div>
         {{content}}
-
       </div>
+      <div>
     </div>
   </div>
-
 
 
   <!-- Bootstrap core JavaScript
