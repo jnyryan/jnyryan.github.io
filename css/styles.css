@@ -57,6 +57,12 @@ article{
   color: #ffd343;
 }
 
+.sidebar{
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 .sidebar a{
   color: #fff;
   font-size: 1.4em;
