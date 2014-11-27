@@ -113,7 +113,10 @@ p {
 
 .posts{
   text-align: justify;
+
 }
+
+
 
 .post-header{
   margin-left: -35px;
@@ -142,4 +145,15 @@ pre
   margin: 15px 7px;
   padding: 7px 12px;
   overflow-x: auto;
+}
+
+.archive{
+  font-size: 1.5em;
+}
+
+.archive .tag-cloud{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: .6em;
+  text-align: justify;
 }
