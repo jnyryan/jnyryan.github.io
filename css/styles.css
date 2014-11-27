@@ -80,6 +80,15 @@ ul, menu, dir {
   -webkit-padding-start: 0px;
 }
 
+.portfolio{
+  font-size: .8em;
+  padding-left: 20px;
+}
+
+.portfolio h4{
+  color: #ffd343;
+}
+
 /*
  Custom Styles
 */
