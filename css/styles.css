@@ -31,8 +31,6 @@ body {
   }
 }
 
-
-
 @media(min-width: 1200px){
   .main {
     width: 1200px;
@@ -53,6 +51,28 @@ body {
   color: #ffd343;
 }
 
+.sidebar a{
+  color: #fff;
+  font-size: 1.4em;
+  line-height: 1.6;
+  text-shadow: 0 1px #000;
+}
+
+.sidebar a:hover{
+  color: #ffd343;
+  text-decoration:none;
+  transition: color 0.3s;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
 
 /*
  Custom Styles

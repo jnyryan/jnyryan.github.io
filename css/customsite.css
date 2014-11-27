@@ -86,10 +86,10 @@ article h2{
     min-width:250px;
 }
 
-.sidebar-module a{
-    color: #fff;
-    text-shadow: 0 1px #000;
-}
+  .sidebar-module a{
+      color: #fff;
+      text-shadow: 0 1px #000;
+  }
 
 .sidebar-module a:hover{
     color: #ffd343;
