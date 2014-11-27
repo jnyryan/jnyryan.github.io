@@ -23,7 +23,7 @@ This is a list of tools I've collected over the years for diagnostic analysis, p
   <li><a href="#WINDOWS ARTIFACT ANALYSIS">WINDOWS ARTIFACT ANALYSIS<span>5</span></a></li>
 </ul>
 
-<a name="APPLICATIONS"/>
+<a name="APPLICATIONS"></a>
 ##APPLICATIONS
 
 [Epic Browser](http://epicbrowser.com/)
