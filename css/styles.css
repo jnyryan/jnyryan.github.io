@@ -33,7 +33,9 @@ body {
 
 @media(min-width: 1200px){
   .main {
-    width: 1200px;
+    width: 900px;
+    padding-right: 40px;
+    padding-left: 120px;
   }
 }
 /* SideBar Overrides and customizations*/
@@ -84,6 +86,7 @@ ul, menu, dir {
 
 h1 {
   font-size: 5em;
+  font-weight: 900;
 }
 
 p {
