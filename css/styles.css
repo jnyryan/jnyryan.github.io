@@ -16,6 +16,10 @@ body {
   padding-top: 0px;
 }
 
+article{
+  margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
   .sidebar {
     top: 0px;
@@ -33,7 +37,7 @@ body {
 
 @media(min-width: 1200px){
   .main {
-    width: 900px;
+    width: 970px;
     padding-right: 40px;
     padding-left: 120px;
   }
@@ -82,11 +86,12 @@ ul, menu, dir {
 
 .page-header{
   color: #337ab7;
+  font-weight: 900;
+  margin-left: -35px;
 }
 
 h1 {
   font-size: 5em;
-  font-weight: 900;
 }
 
 p {
@@ -100,6 +105,11 @@ p {
 .posts{
   text-align: justify;
 }
+
+.post-header{
+  margin-left: -35px;
+}
+
 .icon-header{
   margin-right: 5px;
   color: #dfdfdf;

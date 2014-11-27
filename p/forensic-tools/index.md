@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: page
 title: Security & Forensic Tools
 ---
-
-<h1 class="page-header">Security & Forensic Tools</h1>
-
 
 This is a list of tools I've collected over the years for diagnostic analysis, penetration testing and repair of operating systems, hard drives and memory ...
 
