@@ -12,12 +12,16 @@ dashboard.css Overrides
 body {
   /*  */
 
-
+  font-size: 1.5em;
   padding-top: 0px;
 }
 
 article{
   margin-bottom: 40px;
+}
+
+.site{
+  font-size: 1.4em;
 }
 
 @media (min-width: 768px) {
@@ -53,8 +57,9 @@ article{
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1.4;
-  font-size: 2em;
+  font-size: 1.2em;
   color: #ffd343;
+  text-align:justify;
 }
 
 .sidebar{
@@ -65,7 +70,7 @@ article{
 
 .sidebar a{
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: 1.6;
   text-shadow: 0 1px #000;
 }
@@ -76,7 +81,7 @@ article{
   transition: color 0.3s;
 }
 
-ul, menu, dir {
+.sidebar ul, menu, dir {
   display: block;
   list-style-type: none;
   -webkit-margin-before: 1em;
@@ -84,6 +89,12 @@ ul, menu, dir {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
+}
+
+ul, menu, dir {
+
+  list-style-type: disc;
+  font-size: .9em;
 }
 
 .portfolio{
@@ -106,11 +117,11 @@ ul, menu, dir {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3.2em;
 }
 
-p {
-  font-size: 1.5em;
+p{
+  text-align: justify;
 }
 
 /*
@@ -128,10 +139,13 @@ p {
   margin-left: -35px;
 }
 
+.post-meta{
+  font-size: .8em;
+}
+
 .icon-header{
   margin-right: 5px;
   color: #dfdfdf;
-  font-size:1.4em;
 }
 
 pre
@@ -153,13 +167,13 @@ pre
   overflow-x: auto;
 }
 
-.archive{
-  font-size: 1.5em;
+.archive .tag-list{
+  margin-left: 30px;
 }
 
 .archive .tag-cloud{
   margin-top: 30px;
   margin-bottom: 40px;
-  font-size: .6em;
+  font-size: .8em;
   text-align: justify;
 }
