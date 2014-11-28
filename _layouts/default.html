@@ -16,12 +16,13 @@
 
   <!-- Bootstrap core CSS -->
   <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <link href="/css/dashboard.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{ relative }}/css/blog.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ relative }}/css/custom.css" />
-  <link href="{{ relative }}/css/customblog.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/sticky-footer.css" rel="stylesheet">
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -35,104 +36,34 @@
   <style id="holderjs-style" type="text/css"></style>
 </head>
 
-<body>
+<body >
 
-  <div class="blog-masthead">
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12">
-          <div class="blog-header">
-            <h1 class="blog-title">
-                        <i class="fa fa-code-fork"></i>{{ site.name }}</h1>
-            <p class="lead blog-description">code / design / play</p>
-          </div>
-        </div>
-
-      </div>
-
-
-
-      <nav class="blog-nav">
-        <a class="blog-nav-item" href="/">Home</a>
-        <a class="blog-nav-item" href="/p/blog">Blog</a>
-        <a class="blog-nav-item" href="/p/archive">Archive</a>
-        <a class="blog-nav-item" href="/p/forensic-tools">Security & Forensic Tools</a>
-        <a class="blog-nav-item" href="https://github.com/jnyryan/feedback/issues/new">Contact</a>
-
-      </nav>
-    </div>
-  </div>
-
-  <div class="container">
-
+  <div class="container-fluid site">
     <div class="row">
+      <div class="col-sm-3 col-md-3 sidebar">
+          <div class="profilepic">
 
-      <div class="col-sm-9 blog-main">
-        {{content}}
+            <img src="/img/robohash-mybot.png" title="robohash.org" alt="Profile Picture" style="width: 160px; background-color:white;">
 
-      </div>
-      <!-- /.blog-main -->
-
-      <div class="col-sm-3 blog-sidebar">
-
-        <div class="sidebar-module">
-          <h4>Portfolio</h4>
-          <ol class="list-unstyled">
-            <li><a class="fontIcon fa fa-github-square" href="https://github.com/jnyryan?tab=repositories">  Code on GitHub</a>
-            </li>
-            <li><a class="fontIcon fa fa-github-alt" href="https://gist.github.com/jnyryan">  Gists on GitHub</a>
-            </li>
-            <li><a class="fontIcon fa fa-terminal" href="https://rubygems.org/profiles/jnyryan">  My RubyGems</a>
-            </li>
-            <li><a class="fontIcon fa fa-cloud" href="https://registry.hub.docker.com/search?q=jnyryan">  Docker Hub</a>
-            </li>
-            <li><a class="fontIcon fa fa-cloud" href="https://launchpad.net/~jnyryan">  Personal Package Archive</a>
-            </li>
-            <li><a class="fontIcon fa fa-twitter-square" href="https://twitter.com/jnyryan">  Twitter</a>
-            </li>
-            <li><a class="fontIcon fa fa-linkedin-square" href="http://ie.linkedin.com/in/jaryan">  LinkedIn</a>
-            </li>
-          </ol>
-        </div>
-
-        {% include /tag_cloud %} {% include /archive_list %}
-
-      </div>
-      <!-- /.blog-sidebar -->
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <div class="blog-footer">
-    <div class="container">
-      <div class="row">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-md-4 text-left">
-              <div><a href="/">Home</a>
-                </li>
-              </div>
-              <div><a href="/p/blog">Blog</a>
-                </li>
-              </div>
-              <div><a href="/p/archive">Archive</a>
-                </li>
-              </div>
-              <div><a href="/p/forensic-tools">Security & Forensic Tools</a>
-                </li>
-              </div>
-              <div><a href="https://github.com/jnyryan/feedback/issues/new">Contact</a>
-                </li>
+          </div>
+          <div>
+            <div class="blog-header">
+              <h1 class="blog-title">{{ site.name }}</h1>
+                <p class="lead blog-description">code / design / play</p>
               </div>
             </div>
 
-            <div class="col-md-4 text-left">
+            <ul class="">
+              <li><a href="/">home</a></li>
+              <!--<li><a href="/p/about">about</a></li>-->
+              <li><a href="/p/blog">blog archive</a></li>
+              <!--<li><a href="/p/portfolio">Portfolio</a></li>-->
+              <li><a href="/p/toolbox">security & forensic tools</a></li>
+              <li><a href="https://github.com/jnyryan/feedback/issues/new">contact</a></li>
+            </ul>
+
+            <div class="portfolio">
+              <h4><i class="fa fa-soundcloud"></i>&nbsp;online portfolio</h4>
               <ol class="list-unstyled">
                 <li><a class="fontIcon fa fa-github-square" href="https://github.com/jnyryan?tab=repositories">  Code on GitHub</a>
                 </li>
@@ -142,11 +73,6 @@
                 </li>
                 <li><a class="fontIcon fa fa-cloud" href="https://registry.hub.docker.com/search?q=jnyryan">  Docker Hub</a>
                 </li>
-              </ol>
-            </div>
-
-            <div class="col-md-4 text-left">
-              <ol class="list-unstyled">
                 <li><a class="fontIcon fa fa-cloud" href="https://launchpad.net/~jnyryan">  Personal Package Archive</a>
                 </li>
                 <li><a class="fontIcon fa fa-twitter-square" href="https://twitter.com/jnyryan">  Twitter</a>
@@ -156,21 +82,25 @@
               </ol>
             </div>
 
-
-          </div>
-        </div>
-        <br/>
-        <div class="col-md-12">
-          <p>
-          &copy; 2014 John Ryan with help from <a href="http://jekyllrb.com/" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-        </div>
       </div>
+      <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main">
+
+        {{content}}
+
+        <footer class="footer">
+          <hr/>
+          <div>
+            <p>
+              &copy; 2014 John Ryan with help from <a href="http://jekyllrb.com/" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll</a>
+              and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+
     </div>
-
-
   </div>
+
 
 
   <!-- Bootstrap core JavaScript

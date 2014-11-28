@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John A Ryan">
+  <meta property="og:image" content="http://jnyryan.github.io/img/bloglink.png" />
+  <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+  <title>{{ page.title }}</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/syntax.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/sidebar.css" rel="stylesheet">
+  <link href="/css/customsite.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css"></style>
+  <style id="holderjs-style" type="text/css"></style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar-module">
+      <div class="profilepic">
+
+        <img src="/img/mybot.png" alt="Profile Picture" style="width: 160px; background-color:white;">
+
+      </div>
+      <div>
+        <div class="blog-header">
+          <h1 class="blog-title">
+          <i class="fa fa-code-fork"></i>{{ site.name }}</h1>
+          <p class="lead blog-description">code / design / play</p>
+        </div>
+      </div>
+
+      <ul class="">
+        <li><a href="/">Home</a></li>
+        <!--<li><a href="/p/about">About</a></li>-->
+        <li><a href="/p/blog">Blog Archive</a></li>
+        <!--<li><a href="/p/portfolio">Portfolio</a></li>-->
+        <li><a href="/p/forensic-tools">Security & Forensic Tools</a></li>
+        <li><a href="https://github.com/jnyryan/feedback/issues/new">Contact</a></li>
+      </ul>
+
+    </div>
+    <div class="main-module">
+      <div class="main-module-container">
+        <div>
+        {{content}}
+      </div>
+      <div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+================================================== -->
+
+  {% if site.analytics_enabled %} {% include /google_analytics %} {% endif %}
+
+</body>
+
+</html>

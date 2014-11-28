@@ -2,25 +2,23 @@ name: Johnny Ryan
 slackline: better engineers build better code. be a better engineer
 
 markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 pygments: true
 
 excerpt_separator: "<linebreak>"
 
-# This is the default format. 
+# This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-#permalink: /:categories/:year/:month/:day/:title 
-permalink: /:title 
+#permalink: /:categories/:year/:month/:day/:title
+permalink: /:title
 
 # Comments System
 # This is the key for the Disqus comments system. Get one from http://disqus.com/
-disqus_enabled: false
+disqus_enabled: true
 disqus_shortname: jnyryangithubio
 
 # Contact Form
 # The api key for getsimpleform. Get one from http://getsimpleform.com
-contactform_enabled: true 
+contactform_enabled: true
 contactform_apitoken: f70a375b83a60ecfafe284aec39cd227
 
 
