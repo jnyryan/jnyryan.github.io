@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "VagrantUP: Using virtualization for local development"
-date:   2014-08-17 00:00:00
+date:   2014-11-20 00:00:00
 categories: playing-with-technology
 description:
 tags: [virtualization, design, development]
@@ -22,6 +22,8 @@ Simply put, VagrantUp is a wrapper around your virtualization software (e.g. Vir
 - forward any ports from your host to the virtual machine(s)
 - provision the system (run a script to install software on the virtual machine)
 - allow users to SSH, RDP to the virtual machine, or just run it in VirtualBox.
+
+<linebreak>
 
 ## How do i get up and running with minimal fuss?
 
