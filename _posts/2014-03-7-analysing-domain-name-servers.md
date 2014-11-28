@@ -3,7 +3,7 @@ layout: post
 title:  "Analysing Domain Name Servers"
 date:   2014-03-7 00:00:00
 categories: forensics-and-security
-description:
+description: Analysing Domain Name Servers
 tags: [security, networks]
 
 ---

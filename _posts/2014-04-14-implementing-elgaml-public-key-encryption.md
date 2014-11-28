@@ -3,8 +3,8 @@ layout: post
 title:  "Implementing ElGamal Public Key Encryption"
 date:   2014-04-14 00:00:00
 categories: forensics-and-security
-description:
-tags: [development, cryptography, security]
+description: Implementing ElGamal Public Key Encryption
+tags: [development, cryptography, security, infosec]
 
 ---
 

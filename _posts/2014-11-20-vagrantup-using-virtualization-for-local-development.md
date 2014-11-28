@@ -3,7 +3,7 @@ layout: post
 title:  "VagrantUP: Using virtualization for local development"
 date:   2014-11-20 00:00:00
 categories: playing-with-technology
-description:
+description: a quick introduction to Vagrant and Virtualization for software developers
 tags: [virtualization, design, development]
 
 ---

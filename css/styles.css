@@ -133,7 +133,10 @@ p{
 
 }
 
-
+.posts-list{
+  text-align: justify;
+  list-style-type: none;
+}
 
 .post-header{
   margin-left: -35px;
