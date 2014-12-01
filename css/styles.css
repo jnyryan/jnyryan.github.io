@@ -43,7 +43,7 @@ article{
   .main {
     width: 970px;
     padding-right: 40px;
-    padding-left: 120px;
+    padding-left: 90px;
   }
 }
 /* SideBar Overrides and customizations*/
@@ -113,7 +113,7 @@ ul, menu, dir {
 .page-header{
   color: #337ab7;
   font-weight: 900;
-  margin-left: -35px;
+  margin-left: 0px;
 }
 
 h1 {
@@ -130,7 +130,6 @@ p{
 
 .posts{
   text-align: justify;
-
 }
 
 .posts-list{
@@ -138,8 +137,12 @@ p{
   list-style-type: none;
 }
 
+.post-content{
+padding-left: 50px;
+}
+
 .post-header{
-  margin-left: -35px;
+  margin-left: 0px;
 }
 
 .post-meta{
