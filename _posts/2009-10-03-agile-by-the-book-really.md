@@ -27,10 +27,7 @@ What we were left with was the most inflexible oxymoron of an “Agile” proces
 
 So now I hope you see I’m not against Agile – quite the opposite I think it’s great when done right. But it is exactly as it says on the box – agile.
 
-	If you put Agile into practice and a year later 
-	 you are still doing the same thing, 
-	then you’re not improving your process 
-	and you’re doing something wrong!
+>If you put Agile into practice and a year later you are still doing the same thing, then you’re not improving your process and you’re doing something wrong!
 
 Well how can this be avoided or fixed? The power of Agile lies in the Feedback loop created with the sprint retrospective. This Retrospective can be considered the most important part of the Agile Process. It gives the actual troops on the ground a voice on two equally important issues what they see as working and what they see as not working. And invites suggestions on how to fix the latter. Without this continuous improvement, the fundamentals of agile can’t be built upon to provide a SDLC that solves the problems for your individual company.
 
