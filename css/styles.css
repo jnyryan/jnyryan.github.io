@@ -259,4 +259,8 @@ pre
   .post-content {
     padding-left: 0px;
   }
+
+  .markdown p{
+    padding-left: 0px;
+  }
 }
