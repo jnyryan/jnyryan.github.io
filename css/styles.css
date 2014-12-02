@@ -46,6 +46,10 @@ article{
     padding-left: 90px;
     font-size: .9em;
   }
+
+  .post-content {
+    padding-left: 0px;
+  }
 }
 /* SideBar Overrides and customizations*/
 .profilepic img { border-radius: 50%;-moz-border-radius:50%;-webkit-border-radius:50% }
@@ -195,4 +199,13 @@ pre
   margin-bottom: 40px;
   font-size: .8em;
   text-align: justify;
+}
+
+/*
+  Remove certain styles for small media
+*/
+@media (max-width: 768px) {
+  .post-content {
+    padding-left: 0px;
+  }
 }
