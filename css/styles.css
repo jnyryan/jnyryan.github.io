@@ -260,6 +260,17 @@ pre
     padding-left: 0px;
   }
 
+  .sidebar {
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 60px;
+  }
+
+  .sidebar h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
   .markdown p{
     padding-left: 0px;
   }

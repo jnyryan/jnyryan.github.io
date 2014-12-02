@@ -4,7 +4,19 @@ title: Security & Forensic Tools
 ---
 
 This is a list of tools I've collected over the years for diagnostic analysis, penetration testing and repair of operating systems, hard drives and memory ...
-
+<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+<div class="row">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<a href="#">About</a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<img src="image.png" />
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<a href="#myModal1" data-toggle="modal">SHARE</a>
+</div>
+</div>
+</div>
 
 <ul class="tag_box inline">
   <li><a href="#APPLICATIONS">APPLICATIONS<span>7</span></a></li>
