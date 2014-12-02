@@ -21,7 +21,7 @@ article{
 }
 
 .site{
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 @media (min-width: 768px) {
@@ -120,7 +120,7 @@ article{
 ul, menu, dir {
 
   list-style-type: disc;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 .portfolio{
@@ -229,6 +229,10 @@ pre
   margin-bottom: 40px;
   font-size: .8em;
   text-align: justify;
+}
+
+.toolpage p{
+  padding-left: 50px;
 }
 
 /*

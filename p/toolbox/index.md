@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: toolpage
 title: Security & Forensic Tools
 ---
 
@@ -21,18 +21,17 @@ This is a list of tools I've collected over the years for diagnostic analysis, p
   <li><a href="#WINDOWS ARTIFACT ANALYSIS">WINDOWS ARTIFACT ANALYSIS<span>5</span></a></li>
 </ul>
 
-<a name="APPLICATIONS"></a>
-##APPLICATIONS
+## <a name="APPLICATIONS">APPLICATIONS</a>
 
-[Epic Browser](http://epicbrowser.com/)
+#### [Epic Browser](http://epicbrowser.com/)
 
-```
+
 Internet browser with extreme privacy
-```
 
-[Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
 
-```
+#### [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
+
+
 The Tor software protects you by bouncing your communications around a distributed network
 of relays run by volunteers all around the world: it prevents somebody watching your
 Internet connection from learning what sites you visit, it prevents the sites you visit
@@ -41,11 +40,11 @@ from learning your physical location, and it lets you access sites which are blo
 The Tor Browser Bundle lets you use Tor on Windows, Mac OS X, or Linux without needing
 to install any software. It can run off a USB flash drive, comes with a pre-configured
 web browser to protect your anonymity, and is self-contained.
-```
 
-[HTTrack](http://www.httrack.com/)
 
-```
+#### [HTTrack](http://www.httrack.com/)
+
+
 Website Copier
 
 It allows you to download a World Wide Web site from the Internet to a local directory,
@@ -55,9 +54,9 @@ Simply open a page of the "mirrored" website in your browser, and you can browse
 site from link to link, as if you were viewing it online. HTTrack can also update an
 existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable,
 and has an integrated help system.
-```
 
-[Glary Utilities](http://www.glarysoft.com/)
+
+#### [Glary Utilities](http://www.glarysoft.com/)
 
 ```
 The No. 1 Free, Powerful and All-in-one utility for cleaning your Windows PC.
@@ -66,7 +65,7 @@ Protects your privacy and wipe sensitive internet and chat history
 Over 20 tools to maximize your Computer's performance
 ```
 
-[freeSSHd](http://www.freesshd.com/)
+#### [freeSSHd](http://www.freesshd.com/)
 
 ```
 freeSSHd, like it's name says, is a free implementation of an SSH server. It provides
@@ -74,7 +73,7 @@ strong encryption and authentication over insecure networks like Internet. Users
 remote console or even access their remote files thanks to built-in SFTP server.
 ```
 
-[cmdr](http://bliker.github.io/cmder/)
+#### [cmdr](http://bliker.github.io/cmder/)
 
 ```
 Cmder is a software package created out of pure frustration over the absence of
@@ -82,7 +81,7 @@ nice console emulators on Windows. It is based on amazing software, and spiced u
 with the Monokai color scheme and a custom prompt layout. Looking sexy from the start.
 ```
 
-[USB Rubber Ducky](https://hakshop.myshopify.com/products/usb-rubber-ducky-deluxe)
+#### [USB Rubber Ducky](https://hakshop.myshopify.com/products/usb-rubber-ducky-deluxe)
 
 ```
 Take Social Engineering to the next level with a USB Rubber Ducky Deluxe hidden inside
@@ -98,7 +97,7 @@ scripting language, formidable hardware, and covert design.
 <a name="CRYPTOGRAPHY TOOLS"></a>
 ##CRYPTOGRAPHY TOOLS
 
-[Gnu Privacy Guard (GPGTools)](http://www.gnupg.org/)
+#### [Gnu Privacy Guard (GPGTools)](http://www.gnupg.org/)
 
 ```
 GnuPG is the GNU project's complete and free implementation of the OpenPGP standard as defined by
@@ -109,9 +108,9 @@ A wealth of frontend applications and libraries are available. Version 2 of GnuP
 support for S/MIME.
 ```
 
-[GPGTools for Windows](http://www.gpg4win.org/)
+#### [GPGTools for Windows](http://www.gpg4win.org/)
 
-[GPGTools for Mac](https://gpgtools.org/index.html)
+#### [GPGTools for Mac](https://gpgtools.org/index.html)
 
 ```
 Everything you need to get started with
@@ -122,7 +121,7 @@ Use GPG Suite to encrypt, decrypt, sign and verify files or messages. Manage you
 with a few simple clicks and experience the full power of GPG easier than ever before.
 ```
 
-[TrueCrypt](http://www.truecrypt.org/)
+#### [TrueCrypt](http://www.truecrypt.org/)
 
 ```
 Free open-source disk encryption software for Windows 7/Vista/XP, Mac OS X, and Linux
@@ -131,25 +130,25 @@ Free open-source disk encryption software for Windows 7/Vista/XP, Mac OS X, and 
 <a name="DATA RECOVERY"></a>
 ##DATA RECOVERY
 
-[WindowsDataRecovery](http://www.western-digital-data-recovery.com)
+#### [WindowsDataRecovery](http://www.western-digital-data-recovery.com)
 
 ```
 Data Recovery (for Windows & Mac) can easily recover your lost, deleted or formatted files from various Western Digital hard drives such as Elements Desktop 1 TB, My Passport Essential, Caviar Green 2 TB etc. It can recover more than 500+ file types including documents, emails, photos, videos, archives and more. Both Windows & Mac versions are provided. Note: the program performs read-only procedure, so it is 100% risk-free and won’t do any damage to your WD drive.
 ```
 
-[testDisk](http://www.cgsecurity.org/wiki/TestDisk_6.14_Release)
+#### [testDisk](http://www.cgsecurity.org/wiki/TestDisk_6.14_Release)
 
 ```
 TestDisk is a powerful free data recovery program! It was primarily designed to help recover lost partitions and/or make non-booting disks bootable again when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally deleting your Partition Table).
 ```
 
-[photoRec](http://www.cgsecurity.org/wiki/TestDisk_6.14_Release) Same as above
+#### [photoRec](http://www.cgsecurity.org/wiki/TestDisk_6.14_Release) Same as above
 
 ```
 PhotoRec is a File Recovery program designed to recover lost files; including video, documents and archives from Hard Disks, CDRom and lost pictures from digital camera memory (thus, its Photo Recovery name). PhotoRec ignores the filesystem and goes after the underlying data, so it can still find files even if your media's filesystem has been severely damaged or re-formatted (overwritten data, of course, can not be recovered).
 ```
 
-[GetDataBack For NTFS](http://www.runtime.org/data-recovery-software.htm)
+#### [GetDataBack For NTFS](http://www.runtime.org/data-recovery-software.htm)
 
 ```
 Do-it-yourself Data Recovery Software
@@ -157,7 +156,7 @@ Do-it-yourself Data Recovery Software
 Recover your files from an NTFS drive when the data is no longer accessible due to formatting, fdisk, virus attack, power or software failure. Get everything back even when the drive's partition table, boot record, Master File Table or root directory is lost or corrupt.
 ```
 
-[Acronis True Image 2014](http://www.acronis.com/)
+#### [Acronis True Image 2014](http://www.acronis.com/)
 
 ```
 - Acronis True Image 2014 is a backup solution. It protects your content, recovers your data in case of any disasters, and syncs it with all your devices or across computers. Safe, reliable, easy – it’s the ultimate in digital protection.
@@ -166,27 +165,27 @@ Recover your files from an NTFS drive when the data is no longer accessible due 
 <a name="FILE ANALYSIS"></a>
 ##FILE ANALYSIS
 
-[FCIV MD5 Verifier](http://www.microsoft.com/en-ie/download/details.aspx?id=11533)
+#### [FCIV MD5 Verifier](http://www.microsoft.com/en-ie/download/details.aspx?id=11533)
 
 ```
 - The File Checksum Integrity Verifier (FCIV) is a command-prompt utility that computes and verifies cryptographic hash values of files. FCIV can compute MD5 or SHA-1 cryptographic hash values. These values can be displayed on the screen or saved in an XML file database for later use and verification.
 ```
 
-[sha1sum]( )
+#### [sha1sum]( )
 
 ```
 - Unix Checksum
 - sha1sum is a computer program that calculates and verifies SHA-1 hashes. It is commonly used to verify the integrity of files. It (or a variant) is installed by default in most Unix-like operating systems. Variants include shasum (which permits SHA-1 through SHA-512 hash functions to be selected manually) and sha224sum, sha256sum, sha384sum and sha512sum, which use a specific SHA-2 hash function. Versions for Microsoft Windows also exist, and the ActivePerl distribution includes a perl implementation of shasum. On FreeBSD this utility is called 'sha512' and contains additional features.
 ```
 
-[openssl]( )
+#### [openssl]( )
 
 ```
 - checksums of files among other things
 - [common-openssl-commands](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 ```
 
-[WinHex](http://www.winhex.com/winhex/hex-editor.html)
+#### [WinHex](http://www.winhex.com/winhex/hex-editor.html)
 
 ```
 WinHex is in its core a universal hexadecimal editor, particularly helpful in the realm of computer
@@ -194,21 +193,21 @@ forensics, data recovery, low-level data processing, and IT security. An advance
 and emergency use: inspect and edit all kinds of files, recover deleted files or lost data from hard drives with corrupt file systems or from digital camera cards.
 ```
 
-[Hexview](http://www.softpedia.com/get/Office-tools/Other-Office-Tools/1HexView.shtml)
+#### [Hexview](http://www.softpedia.com/get/Office-tools/Other-Office-Tools/1HexView.shtml)
 
 ```
 HexView is a multiple document Hexadecimal viewer that can display, print, and print preview any
 file as a hex dump.
 ```
 
-[Hexedit](http://www.hexedit.com/)
+#### [Hexedit](http://www.hexedit.com/)
 
 ```
 - a hex/ebc/asc stream editor
 - Install: Debian Package - Ubuntu hex editor
 ```
 
-[Windows File Analyser](http://www.mitec.cz/wfa.html)
+#### [Windows File Analyser](http://www.mitec.cz/wfa.html)
 
 ```
 - Windows File Analyzer decodes and analyzes to provide cached information for forensic analysis.
