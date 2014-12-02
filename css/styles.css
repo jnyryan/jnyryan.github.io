@@ -168,6 +168,7 @@ About
 
 .posts{
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 .posts-list{
@@ -231,8 +232,24 @@ pre
   text-align: justify;
 }
 
-.toolpage p{
+/*
+ Toolpage, written in markdown
+*/
+.markdown p{
   padding-left: 50px;
+}
+
+.markdown h1, h2 {
+  color: #337ab7;
+  font-weight: 900;
+  margin-left: 0px;
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown h3, h4, h5, h6 {
+  color: #337ab7;
 }
 
 /*
