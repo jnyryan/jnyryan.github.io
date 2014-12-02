@@ -1,6 +1,6 @@
 <!-- Base Overrides -->
 html {
-  font-family:Flux-Regular,SourceSansProRegular,Arial,sans-serif
+  font-family:sans-serif
   font-style: normal;
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
@@ -44,6 +44,7 @@ article{
     width: 970px;
     padding-right: 40px;
     padding-left: 90px;
+    font-size: .9em;
   }
 }
 /* SideBar Overrides and customizations*/
@@ -122,6 +123,18 @@ h1 {
 
 p{
   text-align: justify;
+}
+
+/*
+About
+*/
+
+.about{
+  text-align: justify;
+}
+
+.about {
+  color: #337ab7;
 }
 
 /*
