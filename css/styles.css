@@ -24,13 +24,14 @@ article{
   font-size: 1.3em;
 }
 
+@media(min-width: 1200px){
 .main {
     width: 992px;
     padding-right: 40px;
     padding-left: 90px;
     font-size: .9em;
 }
-
+}
 /*
   SideBar Overrides and customizations
 */
@@ -251,13 +252,20 @@ pre
 @media (max-width: 768px) {
 
   .container-fluid{
-    padding: 0px 0px 0px 0px;
+    padding-left: 0px;
+
     margin: 0px 0px 0px 0px;
   }
 
   .main{
-    padding: 0px 0px 0px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0px 0px 0px 0px;
+  }
+
+  .main-inner{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .post-content {
