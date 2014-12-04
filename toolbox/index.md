@@ -6,19 +6,19 @@ title: Security & Forensic Tools
 This is a list of tools I've collected over the years for diagnostic analysis, penetration testing and repair of operating systems, hard drives and memory ...
 
 
-<ul class="tag_box inline">
-  <li><a href="#APPLICATIONS">APPLICATIONS<span>7</span></a></li>
-  <li><a href="#CRYPTOGRAPHY TOOLS">CRYPTOGRAPHY TOOLS<span>4</span></a></li>
-  <li><a href="#DATA RECOVERY">DATA RECOVERY<span>5</span></a></li>
-  <li><a href="#FILE ANALYSIS">FILE ANALYSIS<span>9</span></a></li>
-  <li><a href="#FORENSIC ANALYSIS">FORENSIC ANALYSIS<span>11</span></a></li>
-  <li><a href="#MEMORY ANALYSIS">MEMORY ANALYSIS<span>11</span></a></li>
-  <li><a href="#OPERATING SYSTEMS and TOOLS">OPERATING SYSTEMS and TOOLS<span>13</span></a></li>
-  <li><a href="#PASSWORD ANALYSIS">PASSWORD ANALYSIS<span>2</span></a></li>
-  <li><a href="#PENTEST ANALYSIS">PENTEST ANALYSIS<span>19</span></a></li>
-  <li><a href="#REGISTRY ANALYSIS">REGISTRY ANALYSIS<span>2</span></a></li>
-  <li><a href="#VIRTUAL MACHINES TOOLS">VIRTUAL MACHINES TOOLS<span>9</span></a></li>
-  <li><a href="#WINDOWS ARTIFACT ANALYSIS">WINDOWS ARTIFACT ANALYSIS<span>5</span></a></li>
+<ul class="nav">
+  <li><a href="#APPLICATIONS">APPLICATIONS</a></li>
+  <li><a href="#CRYPTOGRAPHY TOOLS">CRYPTOGRAPHY TOOLS</a></li>
+  <li><a href="#DATA RECOVERY">DATA RECOVERY</a></li>
+  <li><a href="#FILE ANALYSIS">FILE ANALYSIS</a></li>
+  <li><a href="#FORENSIC ANALYSIS">FORENSIC ANALYSIS</a></li>
+  <li><a href="#MEMORY ANALYSIS">MEMORY ANALYSIS</a></li>
+  <li><a href="#OPERATING SYSTEMS and TOOLS">OPERATING SYSTEMS and TOOLS</a></li>
+  <li><a href="#PASSWORD ANALYSIS">PASSWORD ANALYSIS</a></li>
+  <li><a href="#PENTEST ANALYSIS">PENTEST ANALYSIS</a></li>
+  <li><a href="#REGISTRY ANALYSIS">REGISTRY ANALYSIS</a></li>
+  <li><a href="#VIRTUAL MACHINES TOOLS">VIRTUAL MACHINES TOOLS</a></li>
+  <li><a href="#WINDOWS ARTIFACT ANALYSIS">WINDOWS ARTIFACT ANALYSIS</a></li>
 </ul>
 
 ## <a name="APPLICATIONS">APPLICATIONS</a>

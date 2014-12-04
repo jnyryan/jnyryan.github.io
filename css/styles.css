@@ -24,55 +24,17 @@ article{
   font-size: 1.3em;
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    top: 0px;
-    background-color: #2b5b84;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
-    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
-    background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
-    background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
-    background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
-    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
-    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
-    -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
-  }
-}
-
-.topbar{
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .topbar {
-    display: block;
-    font-size: .5em;
-    top: 0px;
-    background-color: #2b5b84;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
-    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
-    background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
-    background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
-    background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
-    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
-    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
-    -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
-  }
-}
-
-@media(min-width: 1200px){
-  .main {
-    width: 970px;
+.main {
+    width: 992px;
     padding-right: 40px;
     padding-left: 90px;
     font-size: .9em;
-  }
-
-  .post-content {
-    padding-left: 0px;
-  }
 }
-/* SideBar Overrides and customizations*/
+
+/*
+  SideBar Overrides and customizations
+*/
+
 .profilepic img { border-radius: 50%;-moz-border-radius:50%;-webkit-border-radius:50% }
 
 .blog-title{
@@ -89,9 +51,19 @@ article{
 }
 
 .sidebar{
-    padding-top: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+  top: 0px;
+  background-color: #2b5b84;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
+  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
+  background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
+  background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
+  background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
+  background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
+  -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+  -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .sidebar a{
@@ -115,6 +87,27 @@ article{
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
+}
+
+.topbar{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: block;
+    font-size: .5em;
+    top: 0px;
+    background-color: #2b5b84;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));
+    background-image: -webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -moz-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: -o-linear-gradient(#1e415e 10%,#2b5b84 90%);
+    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
+    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+    -moz-box-shadow: inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
+  }
 }
 
 ul, menu, dir {
@@ -177,7 +170,7 @@ About
 }
 
 .post-content{
-padding-left: 50px;
+  padding-left: 50px;
 }
 
 .post-header{
@@ -256,14 +249,26 @@ pre
   Remove certain styles for small media
 */
 @media (max-width: 768px) {
+
+  .container-fluid{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .main{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
   .post-content {
     padding-left: 0px;
   }
 
   .sidebar {
     padding-top: 30px;
-    padding-left: 0px;
-    padding-right: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
   }
 
   .sidebar h1, .h1, h2, .h2, h3, .h3 {
