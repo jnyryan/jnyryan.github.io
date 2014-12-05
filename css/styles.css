@@ -36,12 +36,17 @@ article{
   SideBar Overrides and customizations
 */
 
+.profilepic { text-align: center;}
 .profilepic img { border-radius: 50%;-moz-border-radius:50%;-webkit-border-radius:50% }
 
 .blog-title{
   color: #dcdcdc;
 }
 
+.blog-title-right{
+  color: #dcdcdc;
+  text-align:right;
+}
 .lead {
   margin-bottom: 10px;
   font-weight: 400;
@@ -65,6 +70,10 @@ article{
   padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+.sidebar-inner {
+  width: 250px;
 }
 
 .sidebar a{
