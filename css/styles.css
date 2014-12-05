@@ -97,7 +97,7 @@ article{
 @media (max-width: 768px) {
   .topbar {
     display: block;
-    font-size: .5em;
+    font-size: 1em;
     top: 0px;
     background-color: #2b5b84;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF1E415E',endColorstr='#FF2B5B84');
