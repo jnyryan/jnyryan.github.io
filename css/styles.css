@@ -24,6 +24,12 @@ article{
   font-size: 1.3em;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 @media(min-width: 1200px){
 .main {
     width: 992px;
