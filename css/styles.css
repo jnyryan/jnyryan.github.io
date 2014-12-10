@@ -47,6 +47,7 @@ article{
   color: #dcdcdc;
   text-align:right;
 }
+
 .lead {
   margin-bottom: 10px;
   font-weight: 400;
@@ -179,7 +180,7 @@ About
   list-style-type: none;
 }
 
-.post-content{
+.posts-list .post-content{
   padding-left: 50px;
 }
 
