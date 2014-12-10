@@ -31,7 +31,7 @@
           <div>
             <h2 class="page-header">{{this_year}}</h2>
           </div>
-          <ul>
+          <p>
         {% endif %}
 
         <div>
@@ -46,14 +46,14 @@
           {%endfor%}
         </span>
         {% if forloop.last %}
-          </ul>
+      </p>
         {% else %}
           {% if this_year != next_year %}
-            </ul>
+            </p>
             <div>
               <h2 class="page-header">{{next_year}}</h2>
             </div>
-            <ul>
+            <p>
           {% endif %}
         {% endif %}
       {% endfor %}
