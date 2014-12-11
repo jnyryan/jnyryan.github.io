@@ -33,15 +33,16 @@ We then require the build-essential package. This is required for compiling the 
 It includes the g++ complier, c libraries, make and the packager builder (Mepis, 2013).
 
 ``` bash
-sudo apt-get install -y build- essential
+sudo apt-get install -y build-essential
 ```
 
 The next dependency **kernel-package** provides the capability to create custom Debian kernel package images and their associated
 headers into a header image.
 
 ``` bash
-sudo apt-get install -y kernel- package
+sudo apt-get install -y kernel-package
 ```
+<linebreak>
 
 Fakeroot is a convenience for our build that provides the ability to perform a kernel build without being root (Ltd, 2013). This provides wrappers around many functions such as chown, getuidetc. which creates a fake root environment.
 
@@ -124,10 +125,10 @@ of the build times.
 
 | # Cores | Build Time (minutes) |
 |:-----:|-------------:|
-| 1     | 89m51.697s |
-| 2     | 53m8.310s |
-| 4     |￼ 35m20.431s |
-| 8     | 26m59.720s |
+| 1     | 89m 51.697s |
+| 2     | 53m 08.310s |
+| 4     |￼ 35m 20.431s |
+| 8     | 26m 59.720s |
 
 ***Kernel build time comparison for varying numbers of cores on an Intel® Xeon(R) CPU X5650 @ 2.67GHz × 8 running Ubuntu 12.04 LTS on VMware vSphere® Hypervisor.***
 

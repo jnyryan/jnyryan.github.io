@@ -181,6 +181,20 @@ About
   margin-bottom: 30px;
 }
 
+.posts table {
+  border-collapse: collapse;
+}
+
+.posts td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.posts tr:nth-child(even) {background: #f5f5f5}
+
+.posts tr:nth-child(odd) {background: #FFF}
+
 .posts-list{
   text-align: justify;
   list-style-type: none;
