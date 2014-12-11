@@ -1,6 +1,7 @@
 ---
 layout: markdown
 title: security & forensic tools
+description: "various tools for hacking and analysing operating systems and files"
 ---
 
 This is a list of tools I've collected over the years for diagnostic analysis, penetration testing and repair of operating systems, hard drives and memory ...
