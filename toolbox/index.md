@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Security & Forensic Tools
+title: security & forensic tools
 ---
 
 This is a list of tools I've collected over the years for diagnostic analysis, penetration testing and repair of operating systems, hard drives and memory ...
