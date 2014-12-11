@@ -120,7 +120,7 @@ We also specify that we should use all the processors available on the system an
 fakerootmake -j `getconf _NPROCESSORS_ONLN` deb-pkg LOCALVERSION=-opsyscall
 ```
 
-This command can take quite some time to run depending on the hardware or virtualised environment. We tried various configurations and here are the comparisons
+This command can take quite some time to run depending on the hardware or virtualised environment. I tried various configurations and here are the comparisons
 of the build times.
 
 | # Cores | Build Time (minutes) |
@@ -142,7 +142,7 @@ and libc image containing headers for building the kernel – which will be nece
 With the kernel compiled we now want to install it. This is easily done using the Debian Package utility dpkg. The commands below install the packages and reboot the machine.
 
 ``` bash
-Sudo dpkg –i linux-*
+sudo dpkg –i linux-*
 sudo reboot
 ```
 
