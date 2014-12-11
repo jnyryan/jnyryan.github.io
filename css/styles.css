@@ -110,7 +110,7 @@ img {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .topbar {
     display: block;
     font-size: 1em;
@@ -265,7 +265,7 @@ pre
 /*
   Remove certain styles for small media
 */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 
   .container-fluid{
     padding-left: 0px;
