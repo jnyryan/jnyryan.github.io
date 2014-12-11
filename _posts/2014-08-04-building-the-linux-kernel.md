@@ -10,12 +10,11 @@ tags: [security, hacking, linux, development]
 
 Ever curious about how you would go about compiling the linux kernel?
 
-This is a quick guide on getting the latest linux code, building new .deb packages and installing it on your on your computer.
+This is a quick guide on getting the latest linux code, building new debian packages and installing it.
 
 ***Warning!! / Disclaimer!! / Common Sense Alert!!***
 
 You guessed it! This can hose your OS, so best do this on a virtual machine!
-
 
 
 ##Installing the dependencies
