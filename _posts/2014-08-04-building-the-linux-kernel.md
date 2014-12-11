@@ -10,7 +10,7 @@ tags: [security, hacking, linux, development]
 
 Ever curious about how you would go about compiling the linux kernel?
 
-This is a quick guide on getting the latest linux code, building new debian packages and installing it.
+This is a quick guide on getting the latest linux code, building new debian packages and installing them.
 
 ***Warning!! / Disclaimer!! / Common Sense Alert!!***
 
@@ -122,14 +122,14 @@ fakerootmake -j `getconf _NPROCESSORS_ONLN` deb-pkg LOCALVERSION=-opsyscall
 This command can take quite some time to run depending on the hardware or virtualised environment. We tried various configurations and here are the comparisons
 of the build times.
 
-| # Cores|Build Time (minutes)|
+| # Cores | Build Time (minutes) |
 |:-----:|-------------:|
-| 1     | 89m51.697s|
-| 2     | 53m8.310s|
-| 4     |￼ 35m20.431s|
-| 8     | 26m59.720s|
+| 1     | 89m51.697s |
+| 2     | 53m8.310s |
+| 4     |￼ 35m20.431s |
+| 8     | 26m59.720s |
 
-*Kernel build time comparison for varying numbers of cores on an Intel® Xeon(R) CPU X5650 @ 2.67GHz × 8 running Ubuntu 12.04 LTS on VMware vSphere® Hypervisor.*
+***Kernel build time comparison for varying numbers of cores on an Intel® Xeon(R) CPU X5650 @ 2.67GHz × 8 running Ubuntu 12.04 LTS on VMware vSphere® Hypervisor.***
 
 Once the build process completes we will be left with four .deb packages in the parent directory to the source code, named after the version of the kernel and
 the customised local version specified above. There will be a headers image for use if we want to compile modules later on. The other packages are the kernel
@@ -157,6 +157,10 @@ In our case it will be “3.9.0_opsyscall”
 
 With many kernel builds installed we will need to specify which one we want to boot with. To do this we will use the grub-customizer tool that we installed earlier.
 This is a graphical interface that will allow us to choose the kernel that the grub boot-loader will choose during start-up.
+
+![grub-customizer](../blog_images/buildingthelinuxkernel-grub.png)
+***Screen grab from grub customizer.***
+
 It also allows for the boot menu to be displayed for a set time period to allow for a previous kernel version to be chosen – should your latest version have errors and not boot.
 
 ## That's it!
