@@ -36,7 +36,9 @@ img {
 }
 
 /*
+*******************************
 SideBar Overrides and customizations
+*******************************
 */
 
 .profilepic { text-align: center;}
@@ -107,6 +109,7 @@ SideBar Overrides and customizations
 /* small devices */
 @media (min-width: 768px) {
   .sidebar{
+    width: 230px;
     position: fixed;
     height: 100%;
   }
@@ -115,6 +118,7 @@ SideBar Overrides and customizations
 /* Medium devices */
 @media (min-width: 992px) {
   .sidebar{
+    width: 25%;
     position: fixed;
     height: 100%;
   }
@@ -130,9 +134,10 @@ SideBar Overrides and customizations
 }
 
 /*
-main content
+******************************
+  main content
+*******************************
 */
-
 
 .main {
   padding-right: 10px;
@@ -142,7 +147,7 @@ main content
 /* small devices */
 @media (min-width: 768px) {
   .main {
-    width: 768px;
+    width: 538px;
     padding-right: 20px;
     padding-left: 20px;
     float: left;
