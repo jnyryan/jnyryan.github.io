@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building the Linux Kernel"
-date:   2014-08-02 00:00:00
+date:   2014-05-02 00:00:00
 categories: playing-with-technology
 description:
 tags: [security, hacking, linux, development]
@@ -159,7 +159,7 @@ In our case it will be “3.9.0_opsyscall”
 With many kernel builds installed we will need to specify which one we want to boot with. To do this we will use the grub-customizer tool that we installed earlier.
 This is a graphical interface that will allow us to choose the kernel that the grub boot-loader will choose during start-up.
 
-![grub-customizer](../blog_images/buildingthelinuxkernel-grub.png)
+![grub-customizer](../img_posts/buildingthelinuxkernel-grub.png)
 ***Screen grab from grub customizer.***
 
 It also allows for the boot menu to be displayed for a set time period to allow for a previous kernel version to be chosen – should your latest version have errors and not boot.

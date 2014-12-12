@@ -31,12 +31,12 @@ img {
 }
 
 @media(min-width: 1200px){
-.main {
-    width: 992px;
-    padding-right: 40px;
-    padding-left: 90px;
-    font-size: .9em;
-}
+  .main {
+      width: 992px;
+      padding-right: 40px;
+      padding-left: 90px;
+      font-size: .9em;
+  }
 }
 /*
   SideBar Overrides and customizations

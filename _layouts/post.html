@@ -17,6 +17,14 @@
     <div class="post-content">
       {{ content }}
     </div>
+    <hr/>
+    <div class="post-meta">
+      <i class="fa fa-calendar icon-header" title="date authored"></i>{{ page.date | date_to_string }}
+      <i class="fa fa-user icon-header" title="author"></i>John Ryan
+      <i class="fa fa-tag icon-header" title="tags"></i>
+      {% for tag in page.tags%} {{tag}} {%endfor%}
+    </div>
+    <hr/>
   </div>
 </article>
 

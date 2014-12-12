@@ -5,6 +5,9 @@
 
 <div class="archive">
 
+  <div>
+    <h2>Blog Tags</h2>
+  </div>
   <div class="tag-cloud">
     <p>
         {% assign tags_list = site.tags %}
@@ -29,29 +32,30 @@
         {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
         {% if forloop.first %}
           <div>
-            <h2 class="page-header">{{this_year}}</h2>
+            <h2>{{this_year}}</h2>
           </div>
           <p>
         {% endif %}
+        <p>
+          <div>
+            <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <span class="tag-cloud tag-list">
+          <i class="fa fa-calendar icon-header" title="date authored"></i>{{ post.date | date: "%B %e, %Y" }}
 
-        <div>
-          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-        </div>
-        <span class="tag-cloud tag-list">
-        <i class="fa fa-calendar icon-header" title="date authored"></i>{{ post.date | date: "%B %e, %Y" }}
-
-          <i class="fa fa-tag icon-header" title="tags"></i>
-          {% for tag in post.tags%}
-            {{tag}}
-          {%endfor%}
-        </span>
+            <i class="fa fa-tag icon-header" title="tags"></i>
+            {% for tag in post.tags%}
+              {{tag}}
+            {%endfor%}
+          </span>
+        </p>
         {% if forloop.last %}
       </p>
         {% else %}
           {% if this_year != next_year %}
             </p>
             <div>
-              <h2 class="page-header">{{next_year}}</h2>
+              <h2>{{next_year}}</h2>
             </div>
             <p>
           {% endif %}
