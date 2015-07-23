@@ -693,6 +693,9 @@ View HTTP headers of a page and while browsing.
 
 - BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser.
 
+#### [hookanalyser](http://www.hookanalyser.com/2015/07/hook-analyser-32-major-release.html)
+
+- A Freeware Malware Analysis and Cyber Threat Intelligence Software.
 
 <a name="REGISTRY ANALYSIS"/>
 ##REGISTRY ANALYSIS
