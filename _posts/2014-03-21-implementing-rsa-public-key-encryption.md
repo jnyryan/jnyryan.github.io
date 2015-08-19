@@ -8,7 +8,7 @@ tags: [development, cryptography, security]
 
 ---
 
-Note: This post builds on my previous post [RSA Public Key Encryption with a toy example]({% post_url 2014-03-21-implementing-rsa-public-key-encryption %})
+Note: This post builds on my previous post [RSA Public Key Encryption with a toy example]({% post_url 2013-10-16-rsa-public-key-encryption-with-a-toy-example %})
 
 I figure the best way to get to know something is to do it, and now i want to know how basic RSA Cryptography works. In this post, i'm going to implement the methods required for RSA. Taking a top down approach and will implement the required functions as needed.
 
