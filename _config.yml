@@ -1,11 +1,6 @@
 name: John Ryan
 slackline: better engineers build better code. be a better engineer
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-
-pygments: true
 
 excerpt_separator: "<linebreak>"
 

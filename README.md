@@ -11,7 +11,7 @@ My blog site written using [Jekyll the Blogging Framework](http://jekyllrb.com/)
 to run locally
 
 ```bash
-serve jekyll -w
+bundle exec jekyll serve
 ```
 
 
