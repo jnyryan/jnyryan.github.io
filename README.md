@@ -1,19 +1,10 @@
-#jnyryan.github.io
+# johnryan.io
 
-a place for my thoughts
+Single-page personal site: plain HTML and CSS with no build step, served by GitHub Pages at https://www.johnryan.io/.
 
-My blog site written using [Jekyll the Blogging Framework](http://jekyllrb.com/) and [Twitter Bootstrap](http://twitter.github.com/bootstrap)
+- `index.html`: the page, its meta tags and the Person JSON-LD
+- `styles.css`: all styles (light and dark)
+- `404.html`: sends unknown paths, including old blog URLs, to the home page
+- `CNAME`: custom domain
 
----
-
-## Usage
-
-to run locally
-
-```bash
-bundle exec jekyll serve
-```
-
-
-
-&copy; 2014 John Ryan
+The old Jekyll blog is kept in git history and on the `archive/blog` branch.
