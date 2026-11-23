@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.johnryan.io/sitemap.xml
+Sitemap: https://johnryan.io/sitemap.xml

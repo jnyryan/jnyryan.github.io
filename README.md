@@ -1,6 +1,6 @@
 # johnryan.io
 
-Single-page personal site: plain HTML and CSS with no build step, served by GitHub Pages at https://www.johnryan.io/.
+Single-page personal site: plain HTML and CSS with no build step, served by GitHub Pages at https://johnryan.io/.
 
 - `index.html`: the page, its meta tags and the Person JSON-LD
 - `styles.css`: all styles (light and dark)
