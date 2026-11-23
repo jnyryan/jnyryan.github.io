@@ -9,18 +9,18 @@
 }
 
 :root {
-  --bg: #ffffff;
-  --soft: #f3f8f7;
+  --bg: #cfeae3;
+  --soft: #c2e5dc;
   --card: #ffffff;
   --ink: #13232b;
-  --muted: #4f6470;
-  --line: #dde8e6;
-  --accent: #0e7a6e;
+  --muted: #3d525e;
+  --line: #a9cfc6;
+  --accent: #0b5f55;
   --accent-ink: #ffffff;
   --accent-soft: #ddf3ef;
   --sun: #ffc857;
   --sun-soft: #fff4d6;
-  --sky: #e6f1fb;
+  --sky: #d9f1ea;
   --cta-bg: #13232b;
   --cta-ink: #ffffff;
   --shadow-photo: 0 30px 60px rgba(14, 60, 70, .18);
