@@ -7,8 +7,8 @@
   <meta name="description" content="John Ryan is VP Engineering, Data &amp; Match Intelligence at GLG (Gerson Lehrman Group) in Dublin, Ireland. Technical leader in AI, search and data with 25+ years’ experience. Open to speaking and advisory roles.">
   <meta name="author" content="John Ryan">
   <link rel="canonical" href="https://www.johnryan.io/">
-  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#101215" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111a1c" media="(prefers-color-scheme: dark)">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="John Ryan, VP Engineering, Data &amp; Match Intelligence at GLG">
@@ -31,7 +31,8 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314233a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23fff' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=2026-11-22b">
+  <link rel="preload" href="fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=2026-11-23c">
 
   <meta name="google-site-verification" content="-n5mSt5gbTS1wk-eW8dfELqeMPhr1kkIu5SN1TAT4SU" />
 
@@ -43,7 +44,7 @@
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "url": "https://www.johnryan.io/",
-    "dateModified": "2026-11-22",
+    "dateModified": "2026-11-23",
     "mainEntity": {
       "@type": "Person",
       "@id": "https://www.johnryan.io/#john-ryan",
@@ -101,13 +102,13 @@
       </a>
       <nav aria-label="Sections">
         <ul class="nav">
-          <li><a href="#do" class="nowrap">What I do</a></li>
-          <li class="nav-optional"><a href="#help">How I help</a></li>
-          <li class="nav-optional"><a href="#career">Career</a></li>
-          <li class="nav-optional"><a href="#bio">Bio</a></li>
-          <li><a href="#contact" class="nav-cta">Contact</a></li>
+          <li><a href="#do">What I do</a></li>
+          <li><a href="#help">How I help</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#bio">Bio</a></li>
         </ul>
       </nav>
+      <a class="pill" href="#contact">Let’s talk</a>
     </div>
   </header>
 
@@ -117,7 +118,7 @@
     <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Dublin, Ireland</p>
+          <p class="place">Dublin, Ireland</p>
           <h1>John Ryan</h1>
           <p class="hero-role">VP Engineering, Data &amp; Match Intelligence at <span class="nowrap">GLG (Gerson Lehrman Group)</span></p>
           <p class="hero-statement">I build AI search and the data platforms beneath it, and lead the engineering teams that run them.</p>
@@ -129,40 +130,56 @@
             </a>
             <a class="btn btn-ghost" href="#help">How I can help</a>
           </div>
-          <p class="creds"><span>Experience</span> GLG · Microsoft · Dell · Susquehanna · Australian Prudential Regulation Authority</p>
+          <div class="creds">
+            <p class="creds-label">Experience</p>
+            <ul class="creds-list">
+              <li>GLG</li>
+              <li>Microsoft</li>
+              <li>Dell</li>
+              <li>Susquehanna</li>
+              <li>Australian Prudential Regulation Authority</li>
+            </ul>
+          </div>
         </div>
         <figure class="portrait">
+          <span class="sun" aria-hidden="true"></span>
           <picture>
             <source srcset="john-ryan.webp" type="image/webp">
             <img src="john-ryan.jpg" alt="John Ryan, VP Engineering at GLG" width="640" height="640" fetchpriority="high">
           </picture>
+          <a class="tag" href="#contact">
+            <span class="tag-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12.5c0 3.9-3.6 7-8 7-1.2 0-2.3-.2-3.3-.6L4 20l1.2-3.6C4.4 15.3 4 14 4 12.5c0-3.9 3.6-7 8-7s8 3.1 8 7z"/></svg></span>
+            Start a conversation <span class="tag-arrow" aria-hidden="true">→</span>
+          </a>
         </figure>
       </div>
     </section>
 
     <!-- What I do -->
-    <section class="section alt" id="do" aria-labelledby="do-h">
+    <section class="section" id="do" aria-labelledby="do-h">
       <div class="wrap">
-        <p class="kicker">What I do</p>
-        <h2 id="do-h">Turning data into AI people can trust</h2>
-        <p class="lead section-lead">Good AI is built on good data. I’ve spent my career building both, at scale.</p>
-        <div class="grid-2">
-          <article class="card">
+        <div class="section-head">
+          <p class="kicker">What I do</p>
+          <h2 id="do-h">Turning data into AI people can trust</h2>
+          <p class="section-lead">Good AI is built on good data. I’ve spent my career building both, at scale.</p>
+        </div>
+        <div class="do-grid">
+          <article class="card do-card">
             <h3>AI search and relevance</h3>
             <p class="result">Search that finds what data means, not just what it says.</p>
             <p>A decade leading search and recommendations at scale: ranking, relevance tuning and entity matching across billions of documents.</p>
           </article>
-          <article class="card">
+          <article class="card do-card">
             <h3>Platforms for products and agents</h3>
             <p class="result">Capabilities that every product and AI agent can reuse.</p>
             <p>Search, data and intelligence delivered as services and APIs, including MCP, so new products start from a platform rather than from scratch.</p>
           </article>
-          <article class="card">
+          <article class="card do-card">
             <h3>From lexical to hybrid search</h3>
             <p class="result">Keyword precision and AI understanding, in one search.</p>
             <p>Took search from keyword-only matching to hybrid retrieval, with AI that turns unstructured text into data that search can understand.</p>
           </article>
-          <article class="card">
+          <article class="card do-card">
             <h3>Hands-on AI leadership</h3>
             <p class="result">An executive who knows what AI can do, because I use it every day.</p>
             <p>I designed and shipped <a href="https://oversay.app/" rel="noopener" data-goatcounter-click="out-oversay" data-goatcounter-title="Oversay">Oversay</a>, a commercial Mac and Windows app, end to end with AI agents, in a stack I hadn’t used before.</p>
@@ -172,42 +189,95 @@
     </section>
 
     <!-- How I can help -->
-    <section class="section" id="help" aria-labelledby="help-h">
+    <section class="section alt" id="help" aria-labelledby="help-h">
       <div class="wrap">
-        <p class="kicker">Work with me</p>
-        <h2 id="help-h">How I can help</h2>
-        <p class="lead section-lead">For leadership teams, boards and engineering leaders working out what AI means for them.</p>
-        <div class="grid-2">
+        <div class="section-head">
+          <p class="kicker">Work with me</p>
+          <h2 id="help-h">How I can help</h2>
+          <p class="section-lead">For leadership teams, boards and engineering leaders working out what AI means for them.</p>
+        </div>
+        <div class="offers">
           <article class="card offer">
             <h3>AI and data strategy</h3>
             <p>For CEOs, CTOs and boards. Find where AI can pay off with the data you have today, and what to fix first.</p>
-            <p class="leave"><strong>You leave with</strong> a prioritised plan.</p>
+            <p class="leave">You leave with a prioritised plan.</p>
           </article>
           <article class="card offer">
             <h3>Search and relevance review</h3>
             <p>For product and engineering teams whose search or recommendations miss. An outside look at ranking, data and evaluation.</p>
-            <p class="leave"><strong>You leave with</strong> a ranked list of fixes.</p>
+            <p class="leave">You leave with a ranked list of fixes.</p>
           </article>
           <article class="card offer">
             <h3>Engineering leadership advisory</h3>
             <p>For new VPs, directors and CTOs leading teams through the shift to AI: org design, hiring, and how to stay hands-on.</p>
-            <p class="leave"><strong>You leave with</strong> a sounding board who is doing the job.</p>
+            <p class="leave">You leave with a sounding board who is doing the job.</p>
           </article>
           <article class="card offer">
             <h3>Speaking and panels</h3>
             <p>Keynotes, panels and podcasts on AI search, data platforms and leading engineering in the age of AI.</p>
-            <p class="leave"><strong>Topics</strong> are listed under <a href="#contact">Let’s talk</a>.</p>
+            <p class="leave">Topics are listed under <a href="#contact">Let’s talk</a>.</p>
           </article>
         </div>
-        <a class="btn btn-primary help-cta" href="#contact">Start a conversation</a>
+        <p class="center"><a class="btn btn-primary" href="#contact">Start a conversation</a></p>
+      </div>
+    </section>
+
+    <!-- Career -->
+    <section class="section" id="career" aria-labelledby="career-h">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Career</p>
+          <h2 id="career-h">More than 25 years of building</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <p class="when">Jan 2026 – present</p>
+            <h3>VP Engineering, Data &amp; Match Intelligence <span class="org">GLG</span></h3>
+            <p>Lead the teams responsible for expert matching, data infrastructure, third-party data integration and AI-driven discovery across a platform serving billions of documents: Match Intelligence, Data Platform and Data Operations, each run by a director.</p>
+          </li>
+          <li>
+            <p class="when">Jul 2016 – Dec 2025</p>
+            <h3>Director of Engineering, Search &amp; Recommendations <span class="org">GLG</span></h3>
+            <p>Technical lead for AI search and recommendations. Led a global team across the Americas and Europe delivering expert search with the latest AI techniques, including OpenAI, large language models and natural language processing.</p>
+          </li>
+          <li>
+            <p class="when">Feb 2009 – Jul 2016</p>
+            <h3>Principal Software Engineer <span class="org">GLG</span></h3>
+            <p>Hands-on architecture and engineering across search, data and platform services, alongside agile delivery and engineering practices.</p>
+          </li>
+        </ol>
+        <div class="earlier-grid">
+          <div class="box">
+            <h3>Before GLG · 1996 – 2008</h3>
+            <ul class="chips">
+              <li><strong>Senior Software Engineer, Dell</strong> <span>2006 – 2008</span></li>
+              <li><strong>Founder, Rayn Computing Ltd</strong> <span>2004 – 2008 · Dublin</span></li>
+              <li><strong>Senior Software Engineer, Susquehanna International Group</strong> <span>2005 – 2006</span></li>
+              <li><strong>Senior Software Engineer, Pioneer Investments</strong> <span>2004 – 2005</span></li>
+              <li><strong>System Architect, Australian Prudential Regulation Authority</strong> <span>2001 – 2003 · Sydney</span></li>
+              <li><strong>SQL Architect and team manager, Microsoft</strong> <span>1998 – 2000</span></li>
+              <li><strong>Software Engineer, The Learning Company</strong> <span>1996 · Fremont, California</span></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Education</h3>
+            <ul class="chips">
+              <li><strong>Master’s degree, Dublin City University</strong> <span>2012 – 2014</span></li>
+              <li><strong>Postgraduate Diploma, Stockbroking &amp; Investment, Dublin Business School</strong> <span>2004 – 2005</span></li>
+              <li><strong>B.Sc., Computer Science &amp; Software Engineering, TU Dublin</strong> <span>1994 – 1998 · Thesis: an AI engine for analysing MRI scans</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- What I believe -->
     <section class="section alt" id="approach" aria-labelledby="approach-h">
       <div class="wrap">
-        <p class="kicker">How I lead</p>
-        <h2 id="approach-h">What I believe</h2>
+        <div class="section-head">
+          <p class="kicker">How I lead</p>
+          <h2 id="approach-h">What I believe</h2>
+        </div>
         <ol class="beliefs">
           <li><h3>Fix the pipes first</h3><p>If the data coming in is unreliable, no amount of AI on top will save it. The boring work is the leverage.</p></li>
           <li><h3>Build capabilities, not one-off apps</h3><p>Search, data and intelligence should be services that every product and agent can reuse.</p></li>
@@ -219,79 +289,38 @@
 
     <!-- About -->
     <section class="section" id="about" aria-labelledby="about-h">
-      <div class="wrap narrow">
-        <p class="kicker">About</p>
-        <h2 id="about-h">An engineer who became a leader, and never stopped building</h2>
+      <div class="wrap about-grid">
+        <div>
+          <p class="kicker">About</p>
+          <h2 id="about-h">An engineer who became a leader, and never stopped building</h2>
+        </div>
         <div class="prose">
-          <p class="lead">I’ve spent more than 25 years building and scaling data-intensive systems, the last 17 of them at GLG, the world’s leading expert network, where I grew from principal engineer to VP Engineering.</p>
+          <p>I’ve spent more than 25 years building and scaling data-intensive systems, the last 17 of them at GLG, the world’s leading expert network, where I grew from principal engineer to VP Engineering.</p>
           <p>Before that I was a SQL architect and team manager at Microsoft, built systems for financial services in Dublin and for Australia’s financial regulator in Sydney, ran my own consultancy, and was a senior engineer at Dell.</p>
           <p>Today my work sits where AI meets real-world data: search that understands intent, data platforms that AI can trust, and engineering teams spread across continents. AI isn’t new to me: my undergraduate thesis in 1998 was an AI engine for analysing MRI scans.</p>
-          <p>Outside work I’m always building something: robots, VR, speech recognition and, lately, a growing set of AI agent skills. <a class="text-link" href="https://github.com/jnyryan" rel="me noopener">More on GitHub <span aria-hidden="true">→</span></a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Career -->
-    <section class="section alt" id="career" aria-labelledby="career-h">
-      <div class="wrap narrow">
-        <p class="kicker">Career</p>
-        <h2 id="career-h">More than 25 years of building</h2>
-        <ol class="timeline">
-          <li>
-            <p class="when">Jan 2026 – present</p>
-            <h3>VP Engineering, Data &amp; Match Intelligence · GLG</h3>
-            <p>Lead the teams responsible for expert matching, data infrastructure, third-party data integration and AI-driven discovery across a platform serving billions of documents: Match Intelligence, Data Platform and Data Operations, each run by a director.</p>
-          </li>
-          <li>
-            <p class="when">Jul 2016 – Dec 2025</p>
-            <h3>Director of Engineering, Search &amp; Recommendations · GLG</h3>
-            <p>Technical lead for AI search and recommendations. Led a global team across the Americas and Europe delivering expert search with the latest AI techniques, including OpenAI, large language models and natural language processing.</p>
-          </li>
-          <li>
-            <p class="when">Feb 2009 – Jul 2016</p>
-            <h3>Principal Software Engineer · GLG</h3>
-            <p>Hands-on architecture and engineering across search, data and platform services, alongside agile delivery and engineering practices.</p>
-          </li>
-          <li>
-            <p class="when">1996 – 2008</p>
-            <h3>Before GLG</h3>
-            <ul class="earlier">
-              <li><strong>Senior Software Engineer, Dell</strong> <span>2006 – 2008</span></li>
-              <li><strong>Founder, Rayn Computing Ltd</strong> <span>2004 – 2008 · Dublin</span></li>
-              <li><strong>Senior Software Engineer, Susquehanna International Group</strong> <span>2005 – 2006</span></li>
-              <li><strong>Senior Software Engineer, Pioneer Investments</strong> <span>2004 – 2005</span></li>
-              <li><strong>System Architect, Australian Prudential Regulation Authority</strong> <span>2001 – 2003 · Sydney</span></li>
-              <li><strong>SQL Architect and team manager, Microsoft</strong> <span>1998 – 2000</span></li>
-              <li><strong>Software Engineer, The Learning Company</strong> <span>1996 · Fremont, California</span></li>
-            </ul>
-          </li>
-        </ol>
-        <div class="edu">
-          <h3>Education</h3>
-          <ul class="earlier">
-            <li><strong>Master’s degree, Dublin City University</strong> <span>2012 – 2014</span></li>
-            <li><strong>Postgraduate Diploma, Stockbroking &amp; Investment, Dublin Business School</strong> <span>2004 – 2005</span></li>
-            <li><strong>B.Sc., Computer Science &amp; Software Engineering, TU Dublin</strong> <span>1994 – 1998 · Thesis: an AI engine for analysing MRI scans</span></li>
-          </ul>
+          <p>Outside work I’m always building something: robots, VR, speech recognition and, lately, a growing set of AI agent skills. <a href="https://github.com/jnyryan" rel="me noopener">More on GitHub <span aria-hidden="true">→</span></a></p>
         </div>
       </div>
     </section>
 
     <!-- Bio -->
-    <section class="section" id="bio" aria-labelledby="bio-h">
-      <div class="wrap narrow">
-        <p class="kicker">Bio</p>
-        <h2 id="bio-h">Speaker and advisor bio</h2>
-        <p class="bio-intro">For event organisers, panels and advisory boards. Free to use as written.</p>
-        <div class="bio">
-          <article class="bio-block">
+    <section class="section alt" id="bio" aria-labelledby="bio-h">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Bio</p>
+          <h2 id="bio-h">Speaker and advisor bio</h2>
+          <p class="section-lead">For event organisers, panels and advisory boards. Free to use as written.</p>
+        </div>
+        <div class="bios">
+          <article class="card bio-card">
             <div class="bio-head">
               <h3>Short bio</h3>
               <button class="copy" type="button" data-copy="bio-short">Copy</button>
             </div>
             <p id="bio-short">John Ryan is VP Engineering, Data &amp; Match Intelligence at GLG, the world’s leading expert network, where he leads the teams behind AI-driven expert matching, data infrastructure and search across billions of documents. A hands-on engineering leader with more than 25 years’ experience across GLG, Dell, Microsoft and financial services, he is based in Dublin, Ireland.</p>
+            <a class="headshot-link" href="john-ryan.jpg" download="john-ryan-headshot.jpg">Download headshot <span aria-hidden="true">↓</span></a>
           </article>
-          <article class="bio-block">
+          <article class="card bio-card">
             <div class="bio-head">
               <h3>Full bio</h3>
               <button class="copy" type="button" data-copy="bio-long">Copy</button>
@@ -303,50 +332,47 @@
             </div>
           </article>
         </div>
-        <a class="text-link headshot-link" href="john-ryan.jpg" download="john-ryan-headshot.jpg">Download headshot <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <!-- Talks & writing: items come from the TALKS list in the script at the end of the page -->
-    <section class="section alt" id="talks" aria-labelledby="talks-h">
-      <div class="wrap narrow">
-        <p class="kicker">Talks &amp; writing</p>
-        <h2 id="talks-h">Talks and articles</h2>
-        <ul class="talks-list" id="talks-list" hidden></ul>
-        <p class="talks-empty" id="talks-empty">New talks and articles coming soon. <a href="#contact">Get in touch</a> if you’d like me at your event.</p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact" id="contact" aria-labelledby="contact-h">
-      <div class="wrap contact-grid">
-        <div>
-          <p class="kicker">Speaking &amp; advisory</p>
-          <h2 id="contact-h">Let’s talk</h2>
-          <p class="lead">I’m open to speaking, panels and advisory roles on the topics I work on every day:</p>
-          <ul class="topics">
-            <li>Building AI products on real-world data</li>
-            <li>Hybrid AI search and expert matching at scale</li>
-            <li>Data platform strategy for AI products and agents</li>
-            <li>Staying hands-on as an engineering executive in the age of AI</li>
-            <li>Leading distributed engineering teams across continents</li>
-          </ul>
-          <p class="also">I’m also happy to hear about senior engineering leadership roles in AI and data.</p>
-        </div>
-        <div class="contact-links">
-          <a class="btn btn-primary contact-cta" href="https://www.linkedin.com/in/jaryan/" rel="me noopener" data-goatcounter-click="out-linkedin-message" data-goatcounter-title="Message me on LinkedIn">Message me on LinkedIn</a>
-          <a class="link-row" href="mailto:jnyryan@gmail.com" data-goatcounter-click="out-email" data-goatcounter-title="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2 .9v11.6h16V6.4l-8 5.6-8-5.6zM5.6 6h12.8L12 10.5 5.6 6z"/></svg>
-            <span><strong>Email</strong><small>jnyryan@gmail.com</small></span>
-          </a>
-          <a class="link-row" href="https://www.linkedin.com/in/jaryan/" rel="me noopener" data-goatcounter-click="out-linkedin" data-goatcounter-title="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span><strong>LinkedIn</strong><small>The best way to reach me</small></span>
-          </a>
-          <a class="link-row" href="https://github.com/jnyryan" rel="me noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            <span><strong>GitHub</strong><small>github.com/jnyryan</small></span>
-          </a>
+    <!-- Let's talk, with Talks & writing folded in -->
+    <section class="section" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <div class="cta">
+          <div class="cta-main">
+            <p class="kicker">Speaking &amp; advisory</p>
+            <h2 id="contact-h">Let’s talk</h2>
+            <p class="cta-lead">I’m open to speaking, panels and advisory roles on the topics I work on every day:</p>
+            <ul class="topics">
+              <li>Building AI products on real-world data</li>
+              <li>Hybrid AI search and expert matching at scale</li>
+              <li>Data platform strategy for AI products and agents</li>
+              <li>Staying hands-on as an engineering executive in the age of AI</li>
+              <li>Leading distributed engineering teams across continents</li>
+            </ul>
+            <p class="also">I’m also happy to hear about senior engineering leadership roles in AI and data.</p>
+            <!-- Talks & writing: items come from the TALKS list in the script at the end of the page -->
+            <div class="talks" id="talks">
+              <h3 id="talks-h">Talks and articles</h3>
+              <ul class="talks-list" id="talks-list" hidden></ul>
+              <p class="talks-empty" id="talks-empty">New talks and articles coming soon. Get in touch if you’d like me at your event.</p>
+            </div>
+          </div>
+          <div class="contact-links">
+            <a class="btn btn-sun" href="https://www.linkedin.com/in/jaryan/" rel="me noopener" data-goatcounter-click="out-linkedin-message" data-goatcounter-title="Message me on LinkedIn">Message me on LinkedIn</a>
+            <a class="link-row" href="mailto:jnyryan@gmail.com" data-goatcounter-click="out-email" data-goatcounter-title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2 .9v11.6h16V6.4l-8 5.6-8-5.6zM5.6 6h12.8L12 10.5 5.6 6z"/></svg>
+              <span><strong>Email</strong><small>jnyryan@gmail.com</small></span>
+            </a>
+            <a class="link-row" href="https://www.linkedin.com/in/jaryan/" rel="me noopener" data-goatcounter-click="out-linkedin" data-goatcounter-title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span><strong>LinkedIn</strong><small>The best way to reach me</small></span>
+            </a>
+            <a class="link-row" href="https://github.com/jnyryan" rel="me noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span><strong>GitHub</strong><small>github.com/jnyryan</small></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -355,7 +381,7 @@
   <footer class="site-footer">
     <div class="wrap footer-row">
       <p>© 2026 John Ryan · VP Engineering at GLG · Dublin, Ireland</p>
-      <p>Last updated <time datetime="2026-11-22">November 2026</time></p>
+      <p>Last updated <time datetime="2026-11-23">November 2026</time></p>
     </div>
   </footer>
   <script>
